@@ -19,7 +19,7 @@ ruta_rostro = os.path.join(BASE_DIR, 'haarcascade_frontalface_default.xml')
 face_cascade = cv2.CascadeClassifier(ruta_rostro)
 
 # --- 2. CONFIGURACIÓN DE LA API GEMINI (Análisis Profundo) ---
-API_KEY = "AIzaSyAFJveoELBhzlDfDtGfy9aPf-ln6EL6b_Q"
+API_KEY = "CLAVE_API_KEY"
 URL_GEMINI = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}"
 
 # --- 3. CONFIGURACIÓN MQTT Y GLOBALES ---
