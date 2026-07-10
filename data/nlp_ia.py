@@ -6,7 +6,7 @@ import time
 print("Inicializando Motor NLP en la Nube (Gemini 2.5 Flash - Nivel 1)...")
 
 # --- CONFIGURACIÓN DE LA API ---
-API_KEY = "AIzaSyAFJveoELBhzlDfDtGfy9aPf-ln6EL6b_Q"
+API_KEY = "CLAVE_API_KEY"
 
 # Apuntamos a la última versión disponible (2.5)
 url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}"
