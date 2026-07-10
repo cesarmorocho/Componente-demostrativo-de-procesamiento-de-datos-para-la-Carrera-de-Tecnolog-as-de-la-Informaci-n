@@ -1,0 +1,2121 @@
+[
+    {
+        "id": "0b3362ab9d38a37d",
+        "type": "tab",
+        "label": "Procesamiento de datos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d8dc90e837e21ab6",
+        "type": "tab",
+        "label": "Metricas",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dc7152bb2106ef80",
+        "type": "tab",
+        "label": "Encuesta de Satisfacción",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "broker_local",
+        "type": "mqtt-broker",
+        "name": "Raspberry Broker",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6d74b3a71d99947d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#1e272e",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "PROYECTO TI",
+            "hideToolbar": "false",
+            "allowSwipe": "menu",
+            "lockMenu": "true",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "tab_esc2",
+        "type": "ui_tab",
+        "name": "2. Limpieza Datos",
+        "icon": "filter_list",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_esc2_main",
+        "type": "ui_group",
+        "name": "ETL Workspace",
+        "tab": "tab_esc2",
+        "order": 1,
+        "disp": false,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_esc3",
+        "type": "ui_tab",
+        "name": "3. Predicción Al",
+        "icon": "bubble_chart",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_esc3_main",
+        "type": "ui_group",
+        "name": "AI Workspace",
+        "tab": "tab_esc3",
+        "order": 1,
+        "disp": false,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_esc4",
+        "type": "ui_tab",
+        "name": "4. Aula Inteligente",
+        "icon": "wb_incandescent",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_esc4_main",
+        "type": "ui_group",
+        "name": "Smart Control",
+        "tab": "tab_esc4",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_esc1_v2",
+        "type": "ui_tab",
+        "name": "1. Recolección de datos",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_esc1_v2",
+        "type": "ui_group",
+        "name": "Monitor Principal",
+        "tab": "tab_esc1_v2",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_home",
+        "type": "ui_tab",
+        "name": "Inicio",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_home",
+        "type": "ui_group",
+        "name": "Portada",
+        "tab": "tab_home",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b87249656ea7112e",
+        "type": "ui_tab",
+        "name": "5. Nube (Proyector)",
+        "icon": "desktop_windows",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ae9aebf9c090a2a4",
+        "type": "ui_tab",
+        "name": "6. Participar (Celular)",
+        "icon": "phone_iphone",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9329023c5deb7889",
+        "type": "ui_group",
+        "z": "0b3362ab9d38a37d",
+        "name": "Nube Interactiva",
+        "tab": "b87249656ea7112e",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef51176dfe264c5e",
+        "type": "ui_group",
+        "z": "0b3362ab9d38a37d",
+        "name": "Análisis de Sentimientos",
+        "tab": "b87249656ea7112e",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8fbc7630c99a439",
+        "type": "ui_group",
+        "z": "0b3362ab9d38a37d",
+        "name": "Panel de Control (Admin)",
+        "tab": "b87249656ea7112e",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7bf2b77b7b1be31a",
+        "type": "ui_group",
+        "z": "0b3362ab9d38a37d",
+        "name": "Ingreso de Datos",
+        "tab": "ae9aebf9c090a2a4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5fe68977a9bfa8ed",
+        "type": "ui_group",
+        "z": "0b3362ab9d38a37d",
+        "name": "Historial de Emociones",
+        "tab": "ae9aebf9c090a2a4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tab_esc7_encuesta",
+        "type": "ui_tab",
+        "name": "7. Encuesta",
+        "icon": "assignment",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "grp_encuesta_form",
+        "type": "ui_group",
+        "name": "Formulario de Satisfacción",
+        "tab": "tab_esc7_encuesta",
+        "order": 1,
+        "disp": false,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "grp_encuesta_qr",
+        "type": "ui_group",
+        "name": "Código QR",
+        "tab": "tab_esc7_encuesta",
+        "order": 2,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3fb5ec5cc5816875",
+        "type": "mqtt in",
+        "z": "0b3362ab9d38a37d",
+        "name": "Datos MQTT",
+        "topic": "aula/datos",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "ab3c76337d3ebc27",
+                "93b5a84bbc676d8c",
+                "5e711952922318f8",
+                "9714e1cdf8ebf83b"
+            ]
+        ]
+    },
+    {
+        "id": "9528ad360e332653",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "group_home",
+        "name": "UI HOME",
+        "order": 1,
+        "width": "20",
+        "height": "16",
+        "format": "<!DOCTYPE html>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n<style>\n    .home-container {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        height: 100%;\n        text-align: center;\n        color: #2c3e50; /* Texto oscuro para legibilidad */\n        background-color: transparent; /* Fondo transparente para integrar con el tema Light */\n        padding: 20px;\n    }\n\n    .home-title {\n        font-family: 'Rajdhani', sans-serif;\n        font-size: 4.5rem;\n        color: #2980b9; /* Azul fuerte y formal */\n        margin-bottom: 10px;\n        font-weight: 700;\n        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\n    }\n\n    .home-subtitle {\n        font-size: 1.8rem;\n        color: #34495e;\n        font-family: 'Roboto', sans-serif;\n        font-weight: 400;\n    }\n\n    .start-btn {\n        margin-top: 40px;\n        background: #27ae60; /* Verde amigable que invita a hacer clic */\n        color: white;\n        padding: 20px 50px;\n        border-radius: 30px;\n        text-decoration: none;\n        font-weight: bold;\n        transition: all 0.3s ease;\n        border: none;\n        cursor: pointer;\n        font-size: 1.2rem;\n        display: inline-flex;\n        align-items: center;\n        gap: 10px;\n        box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n    }\n\n    .start-btn:hover {\n        background: #2ecc71;\n        transform: translateY(-3px);\n        box-shadow: 0 8px 15px rgba(46, 204, 113, 0.4);\n    }\n\n    .description {\n        margin-top: 60px;\n        max-width: 650px;\n        font-size: 1rem;\n        color: #555;\n        line-height: 1.8;\n        background: rgba(255,255,255,0.7);\n        padding: 20px;\n        border-radius: 10px;\n        border: 1px solid #eee;\n    }\n\n    /* Responsive Text */\n    @media (max-width: 768px) {\n        .home-title { font-size: 3rem; }\n        .home-subtitle { font-size: 1.3rem; }\n        .start-btn { padding: 15px 30px; font-size: 1rem; }\n    }\n</style>\n\n<div class=\"home-container\">\n    <h1 class=\"home-title\">PROYECTO TI</h1>\n    \n    <h2 class=\"home-subtitle\">Plataforma de Demostración de Procesamiento de Datos</h2>\n    \n    <div style=\"margin-top: 20px;\">\n        <button class=\"start-btn\" onclick=\"window.location.hash='#!/1'\">\n            <i class=\"fas fa-play\"></i> INICIAR DEMO\n        </button>\n    </div>\n    \n    <div class=\"description\">\n        Este componente permite la recolección, transformación y análisis de datos en tiempo real \n        utilizando sensores IoT y algoritmos de inteligencia artificial.\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab3c76337d3ebc27",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "CEREBRO ETL (JavaScript)",
+        "func": "// --- 1. GESTIÓN DE ESTADO (MEMORIA PERSISTENTE) ---\nvar filters = context.get('filters') || { \n    remove_zeros: false, \n    smoothing: false, \n    normalization: false, \n    sim_active: true\n};\nvar buffer = context.get('buffer') || [];\nvar t = context.get('t') || 0;\n\n// --- 2. ENTRADAS DE CONTROL (UI) ---\nif (msg.topic === \"update_filters\") {\n    if (msg.payload.sim_active !== undefined) {\n        filters.sim_active = msg.payload.sim_active;\n    }\n    filters.remove_zeros = msg.payload.remove_zeros;\n    filters.smoothing = msg.payload.smoothing;\n    filters.normalization = msg.payload.normalization;\n    \n    context.set('filters', filters);\n    \n    return { \n        payload: { \n            raw: 0, clean: 0, category: null, \n            config: filters \n        } \n    };\n}\n\n// --- 3. OBTENCIÓN DE DATOS ---\nvar base_val = 0;\nvar data_valid = false;\n\nif (filters.sim_active) {\n    if (msg.payload.sound_bruto !== undefined) return null;\n\n    t += 1; \n    context.set('t', t);\n    \n    // Simulación ajustada a la nueva escala (0 a 4000)\n    if (Math.random() > 0.8) {\n        // Pico de ruido (palmada)\n        base_val = Math.floor(Math.random() * 2000) + 2000;\n    } else if (Math.random() > 0.5) {\n         // Murmullo\n         base_val = Math.floor(Math.random() * 800) + 200;\n    } else {\n         // Silencio\n         base_val = 0;\n    }\n    \n    data_valid = true;\n} else {\n    if (msg.payload.sound_bruto === undefined) return null;\n    \n    base_val = msg.payload.sound_bruto || 0;\n    data_valid = true;\n}\n\nif (!data_valid) return null;\n\n// --- 4. PROCESAMIENTO ETL ---\nvar processed_val = base_val;\n\n// A. Filtro: Eliminar Ceros (Para KY-038 esto es útil para ver el ruido de fondo)\nif (filters.remove_zeros) {\n    if (base_val < 50) {\n        var sum = buffer.reduce((a, b) => a + b, 0);\n        processed_val = buffer.length > 0 ? (sum / buffer.length) : 0;\n    }\n}\n\nbuffer.push(processed_val);\nif (buffer.length > 10) buffer.shift();\ncontext.set('buffer', buffer);\n\n// B. Filtro: Suavizado (Media Movil)\nif (filters.smoothing) {\n    if (buffer.length > 0) {\n        var sum = buffer.reduce((a, b) => a + b, 0);\n        processed_val = sum / buffer.length;\n    }\n}\n\n// C. Filtro: Normalización\nif (filters.normalization) {\n    processed_val = (processed_val / 4095.0) * 100.0;\n}\n\n// --- 5. CATEGORIZACIÓN (Franja ancha para conversación) ---\nvar cat_text = \"SILENCIO\";\nvar cat_color = \"#2ecc71\"; // Verde\nvar cat_icon = \"fa-volume-mute\";\n\nif (filters.normalization) {\n    if (processed_val >= 2) { cat_text = \"MURMULLO\"; cat_color = \"#f1c40f\"; cat_icon = \"fa-volume-down\"; }\n    if (processed_val >= 15) { cat_text = \"CONVERSACIÓN\"; cat_color = \"#e67e22\"; cat_icon = \"fa-user-friends\"; }\n    if (processed_val >= 60) { cat_text = \"RUIDO FUERTE\"; cat_color = \"#e74c3c\"; cat_icon = \"fa-bullhorn\"; }\n} else {\n    // Escala Bruta (0 a 4095)\n    if (processed_val >= 100) { cat_text = \"MURMULLO\"; cat_color = \"#f1c40f\"; cat_icon = \"fa-volume-down\"; }\n    // Abrimos la franja de Conversación desde 600 hasta 2500\n    if (processed_val >= 600) { cat_text = \"CONVERSACIÓN\"; cat_color = \"#e67e22\"; cat_icon = \"fa-user-friends\"; }\n    if (processed_val >= 2500) { cat_text = \"RUIDO FUERTE\"; cat_color = \"#e74c3c\"; cat_icon = \"fa-bullhorn\"; }\n}\n\n// --- 6. SALIDA ---\nmsg.payload = {\n    raw: base_val,\n    clean: processed_val,\n    category: { \n        text: cat_text, \n        color: cat_color, \n        icon: cat_icon \n    },\n    config: filters\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 400,
+        "wires": [
+            [
+                "95801775efe6280e"
+            ]
+        ]
+    },
+    {
+        "id": "95801775efe6280e",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "group_esc2_main",
+        "name": "UI SC2 - ETL PIPELINE",
+        "order": 1,
+        "width": "25",
+        "height": "11",
+        "format": "<!DOCTYPE html>\n<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n<style>\n    :root { --primary-bg: #ecf0f1; --accent: #2980b9; --success: #27ae60; --danger: #c0392b; --warning: #f39c12; --text-dark: #2c3e50; }\n    .main-container { display: flex; height: 100%; font-family: 'Roboto', sans-serif; background-color: var(--primary-bg); color: var(--text-dark); overflow: hidden; width: 100%; position: absolute; top:0; left:0;}\n    .content-area { flex: 1; padding: 20px; overflow-y: auto; height: 100%; box-sizing: border-box; width: 100%; }\n\n    .etl-layout { display: flex; height: 100%; gap: 20px; padding: 10px; align-items: stretch; }\n    .chart-panel { flex: 2; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; position: relative; overflow: hidden; min-height: 400px; }\n    .control-panel { flex: 1; background: white; border-radius: 15px; padding: 20px; color: var(--text-dark); display: flex; flex-direction: column; gap: 15px; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); min-width: 250px; max-width: 400px; border: 1px solid #e0e0e0;}\n    \n    .panel-header { font-family: 'Rajdhani'; font-size: 1.5rem; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; width: 100%;}\n    .bad-text { color: var(--danger); }\n    .good-text { color: var(--success); }\n    \n    .filter-row { width: 100%; background: #f8f9fa; padding: 15px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; cursor: pointer; border: 1px solid #eee;}\n    .filter-row:hover { background: #e9ecef; }\n    .filter-row.active-sim { background: rgba(243, 156, 18, 0.1); border-color: var(--warning); }\n    .filter-title { font-weight: bold; font-size: 0.9rem; color: #2c3e50; }\n    .filter-desc { font-size: 0.7rem; color: #7f8c8d; }\n    \n    .live-val { font-family: 'Orbitron'; font-size: 3.5rem; margin-top: auto; align-self: center; text-align: center; }\n    \n    .category-card { margin-top: 20px; width: 90%; padding: 15px; border-radius: 10px; text-align: center; color: white; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; align-items: center; }\n    .cat-icon { font-size: 3rem; margin-bottom: 5px; }\n    .cat-text { font-family: 'Rajdhani'; font-size: 2rem; font-weight: bold; letter-spacing: 2px; }\n    .cat-label { font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; }\n    \n    .sim-overlay { position: absolute; top: 10px; right: 10px; background: var(--warning); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.7rem; z-index: 10;}\n</style>\n\n<div class=\"main-container\">\n    <div class=\"content-area\">\n        <div class=\"etl-layout\">\n            \n            <div class=\"chart-panel\" style=\"border-top: 5px solid var(--danger);\">\n                <div class=\"sim-overlay\" ng-show=\"filters.sim_active\">SIMULACIÓN</div>\n                <div class=\"panel-header bad-text\"><span><i class=\"fas fa-bug\"></i> RAW DATA</span></div>\n                <div style=\"flex: 1; position: relative; width:100%; height:100%;\"><canvas id=\"rawChart\"></canvas></div>\n                <div class=\"live-val bad-text\">{{rawVal | number:0}}</div>\n            </div>\n\n            <div class=\"control-panel\">\n                <div style=\"text-align: center; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; width: 100%;\">\n                    <i class=\"fas fa-cogs\" style=\"font-size: 2rem; color: var(--accent);\"></i>\n                    <h3 style=\"font-family:'Rajdhani'; margin:5px 0; color:var(--text-dark);\">ETL PIPELINE</h3>\n                </div>\n                <div class=\"filter-row\" ng-class=\"{'active-sim': filters.sim_active}\">\n                    <div><div class=\"filter-title\">SIMULACIÓN</div><div class=\"filter-desc\">Generar datos</div></div>\n                    <md-switch ng-model=\"filters.sim_active\" aria-label=\"Sim\" ng-change=\"updateFilters()\"></md-switch>\n                </div>\n                <div class=\"filter-row\">\n                    <div><div class=\"filter-title\">1. LIMPIEZA</div><div class=\"filter-desc\">Eliminar ceros</div></div>\n                    <md-switch ng-model=\"filters.remove_zeros\" aria-label=\"F1\" ng-change=\"updateFilters()\"></md-switch>\n                </div>\n                <div class=\"filter-row\">\n                    <div><div class=\"filter-title\">2. SUAVIZADO</div><div class=\"filter-desc\">Media Móvil</div></div>\n                    <md-switch ng-model=\"filters.smoothing\" aria-label=\"F2\" ng-change=\"updateFilters()\"></md-switch>\n                </div>\n                <div class=\"filter-row\">\n                    <div><div class=\"filter-title\">3. NORMALIZACIÓN</div><div class=\"filter-desc\">Escalar (0-100%)</div></div>\n                    <md-switch ng-model=\"filters.normalization\" aria-label=\"F3\" ng-change=\"updateFilters()\"></md-switch>\n                </div>\n            </div>\n\n            <div class=\"chart-panel\" style=\"border-top: 5px solid var(--success);\">\n                <div class=\"panel-header good-text\"><span><i class=\"fas fa-check-circle\"></i> DATOS LIMPIOS</span></div>\n                <div style=\"flex: 1; position: relative; width:100%; height:100%;\"><canvas id=\"cleanChart\"></canvas></div>\n                \n                <div class=\"live-val good-text\">\n                    {{cleanVal | number: filters.normalization ? 1 : 0}}{{filters.normalization ? '%' : ''}}\n                </div>\n\n                <div class=\"category-card\" ng-style=\"{'background-color': catData.color}\">\n                    <div class=\"cat-label\">INSIGHT</div>\n                    <i class=\"fas cat-icon\" ng-class=\"catData.icon\"></i>\n                    <div class=\"cat-text\">{{catData.text}}</div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</div>\n\n<script>\n(function(scope) {\n    scope.filters = { remove_zeros: false, smoothing: false, normalization: false, sim_active: true };\n    scope.rawVal = 0;\n    scope.cleanVal = 0;\n    scope.catData = { text: \"ESPERANDO...\", color: \"#95a5a6\", icon: \"fa-minus\" };\n    \n    var rawChart, cleanChart;\n    var maxPoints = 50;\n\n    scope.updateFilters = function() {\n        scope.send({ topic: \"update_filters\", payload: scope.filters });\n        if(cleanChart) {\n            cleanChart.options.scales.y.max = scope.filters.normalization ? 100 : 4200;\n            cleanChart.update('none'); \n        }\n    };\n\n    setTimeout(function() {\n        // RAW CHART\n        var ctxRaw = document.getElementById('rawChart');\n        if(ctxRaw) {\n            rawChart = new Chart(ctxRaw, {\n                type: 'line',\n                data: {\n                    labels: Array(maxPoints).fill(''),\n                    datasets: [{ data: Array(maxPoints).fill(0), borderColor: '#c0392b', borderWidth: 2, pointRadius: 0, tension: 0 }]\n                },\n                options: {\n                    responsive: true, maintainAspectRatio: false, \n                    animation: false, \n                    plugins: { legend: { display: false } },\n                    scales: { y: { min: 0, max: 4200 }, x: { display: false } }\n                }\n            });\n        }\n\n        // CLEAN CHART\n        var ctxClean = document.getElementById('cleanChart');\n        if(ctxClean) {\n            cleanChart = new Chart(ctxClean, {\n                type: 'line',\n                data: {\n                    labels: Array(maxPoints).fill(''),\n                    datasets: [{ \n                        data: Array(maxPoints).fill(0), \n                        borderColor: '#27ae60', borderWidth: 3, pointRadius: 0, tension: 0.4, fill: true, backgroundColor: 'rgba(39, 174, 96, 0.1)' \n                    }]\n                },\n                options: {\n                    responsive: true, maintainAspectRatio: false, \n                    animation: false, \n                    plugins: { legend: { display: false } },\n                    scales: { y: { min: 0, max: 4200 }, x: { display: false } }\n                }\n            });\n        }\n    }, 500);\n\n    scope.$watch('msg.payload', function(newVal) {\n        if (!newVal) return;\n        \n        scope.rawVal = newVal.raw || 0;\n        scope.cleanVal = newVal.clean || 0;\n        if (newVal.category) scope.catData = newVal.category;\n\n        if (rawChart) {\n            var rData = rawChart.data.datasets[0].data;\n            rData.push(scope.rawVal);\n            rData.shift();\n            rawChart.update('none');\n        }\n        if (cleanChart) {\n            var cData = cleanChart.data.datasets[0].data;\n            cData.push(scope.cleanVal);\n            cData.shift();\n            cleanChart.update('none');\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 400,
+        "wires": [
+            [
+                "7dde880fc9b82514"
+            ]
+        ]
+    },
+    {
+        "id": "7dde880fc9b82514",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Filtrar Feedback 2",
+        "func": "if (msg.topic === \"update_filters\") return msg;\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "ab3c76337d3ebc27"
+            ]
+        ]
+    },
+    {
+        "id": "c96273a7de43ee0e",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Clock (500ms)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "ab3c76337d3ebc27"
+            ]
+        ]
+    },
+    {
+        "id": "93562425dcc74259",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Filtrar Feedback 3",
+        "func": "if (msg.topic === \"update_params\" || msg.topic === \"sim_switch\") return msg;\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 600,
+        "wires": [
+            [
+                "93b5a84bbc676d8c"
+            ]
+        ]
+    },
+    {
+        "id": "729606794d2f8267",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Clock (300ms)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "93b5a84bbc676d8c"
+            ]
+        ]
+    },
+    {
+        "id": "93b5a84bbc676d8c",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "MODELO DE PREDICCIÓN",
+        "func": "// --- 1. GESTIÓN DE ESTADO ---\nvar params = context.get('params') || { light_threshold: 30, pir_weight: 60 };\nvar sim_active = context.get('sim_active');\nif (sim_active === undefined) sim_active = true;\n\nvar t = context.get('t') || 0;\n\n// --- 2. ENTRADAS DE CONTROL (UI) ---\nif (msg.topic === \"update_params\") {\n    params = msg.payload;\n    context.set('params', params);\n}\n\nif (msg.topic === \"sim_switch\") {\n    sim_active = msg.payload;\n    context.set('sim_active', sim_active);\n    return { \n        payload: { \n            config: { sim: sim_active, params: params },\n            sensors: { pir: false, light: 0, sound: 0, sound_pct: 0 }, \n            prediction: { class: 0, prob: 0 }\n        } \n    };\n}\n\n// --- 3. PROCESAMIENTO DE DATOS (RELOJ vs MQTT) ---\nvar s_pir = false; \nvar s_light = 0; \nvar s_sound = 0;\nvar data_valid = false;\n\nif (sim_active) {\n    if (msg.payload.luz_percent !== undefined) return null;\n    \n    t += 0.2; \n    context.set('t', t);\n    \n    var is_busy = Math.sin(t * 0.5) > 0;\n    if (is_busy) {\n        s_pir = Math.random() > 0.3;\n        s_light = Math.floor(Math.random() * 40) + 50;\n        s_sound = Math.floor(Math.random() * 2000) + 1000;\n    } else {\n        s_pir = false;\n        s_light = Math.floor(Math.random() * 20);\n        s_sound = Math.floor(Math.random() * 600) + 200;\n    }\n    data_valid = true;\n\n} else {\n    if (msg.payload.luz_percent !== undefined) {\n        s_pir = msg.payload.presencia || false;\n        s_light = msg.payload.luz_percent || 0;\n        s_sound = msg.payload.sound_bruto || 0;\n        data_valid = true;\n    } \n}\n\nif (!data_valid) return null;\n\n// Convertir sonido crudo a porcentaje (0-100%)\nvar s_sound_pct = ((s_sound / 4095.0) * 100).toFixed(1);\n\n// --- 4. ALGORITMO PREDICCIÓN ---\nvar light_score = Math.min(s_light / 100.0, 1.0);\nvar sound_score = Math.min(s_sound / 4095.0, 1.0);\nvar pir_score = s_pir ? 1.0 : 0.0;\n\nvar w_pir = params.pir_weight / 100.0;\nvar w_light = 0.3;\nvar w_sound = 0.1;\n\nvar score = (pir_score * w_pir) + (light_score * w_light) + (sound_score * w_sound);\n\n// Penalización por oscuridad\nif (s_light < params.light_threshold) {\n    score -= 0.4;\n}\n\nvar probability = Math.min(Math.max(score, 0.0), 1.0);\nvar pred_class = probability > 0.5 ? 1 : 0;\nvar prob_pct = (probability * 100).toFixed(1);\n\n// --- 5. SALIDA ---\nmsg.payload = {\n    sensors: {\n        pir: s_pir,\n        light: s_light,\n        sound: s_sound,\n        sound_pct: s_sound_pct \n    },\n    prediction: {\n        class: pred_class,\n        prob: prob_pct\n    },\n    config: {\n        sim: sim_active,\n        params: params\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 540,
+        "wires": [
+            [
+                "76aba16bd3d9509b"
+            ]
+        ]
+    },
+    {
+        "id": "76aba16bd3d9509b",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "group_esc3_main",
+        "name": "UI SC3 - PREDICCIÓN DE OCUPACIÓN",
+        "order": 1,
+        "width": "24",
+        "height": "12",
+        "format": "<!DOCTYPE html>\n<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n<style>\n    :root { --primary-bg: #ecf0f1; --accent: #2980b9; --success: #27ae60; --danger: #c0392b; --warning: #f39c12; --text-dark: #2c3e50; }\n    .main-container { display: flex; height: 100%; font-family: 'Roboto', sans-serif; background-color: var(--primary-bg); color: var(--text-dark); overflow: hidden; width: 100%; position: absolute; top:0; left:0; }\n    .content-area { flex: 1; padding: 20px; overflow-y: auto; height: 100%; box-sizing: border-box; width: 100%; }\n\n    /* --- LAYOUT RESPONSIVE FLEXBOX --- */\n    .sc3-layout { \n        display: flex; \n        flex-wrap: wrap; \n        gap: 20px; \n        padding: 10px; \n        align-items: stretch; \n        min-height: 100%; \n    }\n    \n    /* Panel Izquierdo (Predicción) */\n    .pred-panel { \n        flex: 1 1 350px; \n        background: white; \n        border-radius: 15px; \n        padding: 30px 20px; \n        display: flex; \n        flex-direction: column; \n        align-items: center; \n        justify-content: center; \n        box-shadow: 0 5px 15px rgba(0,0,0,0.05); \n        text-align: center; \n        position: relative; \n        min-height: 450px; \n        box-sizing: border-box; \n        border: 1px solid #e0e0e0;\n    }\n    \n    .pred-circle { width: 220px; height: 220px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 10px solid #eee; transition: 0.5s; margin-bottom: 20px; }\n    .pred-circle.occupied { border-color: var(--danger); background: rgba(192, 57, 43, 0.1); }\n    .pred-circle.empty { border-color: var(--success); background: rgba(39, 174, 96, 0.1); }\n    .pred-label { font-size: 3rem; font-family: 'Rajdhani'; font-weight: bold; }\n    \n    .prob-bar-bg { width: 80%; height: 20px; background: #eee; border-radius: 10px; overflow: hidden; margin-top: 10px; }\n    .prob-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--success), var(--warning), var(--danger)); transition: 0.3s; }\n\n    /* Columna Derecha (Datos y Controles) */\n    .right-col { \n        flex: 1 1 450px; \n        display: flex; \n        flex-direction: column; \n        gap: 20px; \n    }\n    .data-card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.05); border: 1px solid #e0e0e0;}\n    \n    /* Grilla de Sensores */\n    .sensor-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; justify-content: space-between;}\n    .sensor-box { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #eee; flex: 1 1 30%; min-width: 100px;}\n    .s-val { font-size: 1.4rem; font-weight: bold; color: var(--accent); font-family: 'Orbitron'; margin-top:5px;}\n    \n    /* Sliders */\n    .slider-row { margin-bottom: 20px; }\n    .slider-info { display: flex; justify-content: space-between; font-size: 0.9rem; color: #7f8c8d; margin-bottom: 5px; font-weight: bold; }\n    input[type=range] { width: 100%; cursor: pointer; accent-color: var(--warning); }\n    \n    /* Chart Container */\n    .chart-container { position: relative; flex: 1; min-height: 250px; width: 100%; }\n    .sim-overlay { position: absolute; top: 10px; right: 10px; background: var(--warning); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.7rem; z-index:10;}\n</style>\n\n<div class=\"main-container\">\n    <div class=\"content-area\">\n        <div class=\"sc3-layout\">\n            \n            <div class=\"pred-panel\">\n                <div class=\"sim-overlay\" ng-show=\"config.sim\">SIMULACIÓN</div>\n                <div style=\"font-family: 'Rajdhani'; color: var(--text-dark); margin-bottom: 20px; font-size: 1.4rem; font-weight: bold;\">\n                    MODELO DE PREDICCIÓN (IA)\n                </div>\n                \n                <div class=\"pred-circle\" ng-class=\"prediction.class === 1 ? 'occupied' : 'empty'\">\n                    <i class=\"fas\" style=\"font-size: 5rem;\" \n                       ng-class=\"prediction.class === 1 ? 'fa-users' : 'fa-door-open'\"\n                       ng-style=\"{color: prediction.class === 1 ? '#c0392b' : '#27ae60'}\"></i>\n                </div>\n                \n                <div class=\"pred-label\" ng-style=\"{color: prediction.class === 1 ? '#c0392b' : '#27ae60'}\">\n                    {{prediction.class === 1 ? 'OCUPADA' : 'VACÍA'}}\n                </div>\n                \n                <div style=\"width: 100%; text-align: center; margin-top: 30px;\">\n                    <div style=\"display: flex; justify-content: space-between; width: 80%; margin: 0 auto; font-size: 0.8rem; color: #7f8c8d;\">\n                        <span>Prob. Vacío</span><span>Prob. Ocupado</span>\n                    </div>\n                    <div class=\"prob-bar-bg\">\n                        <div class=\"prob-bar-fill\" style=\"width: {{prediction.prob}}%\"></div>\n                    </div>\n                    <div style=\"font-weight: bold; margin-top: 10px; font-family: 'Orbitron'; font-size: 1.2rem; color: var(--text-dark);\">\n                        {{prediction.prob}}% Probabilidad\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"right-col\">\n                \n                <div class=\"data-card\">\n                    <div style=\"display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; margin-bottom: 15px;\">\n                        <h4 style=\"margin:0; color: var(--accent); font-family: 'Rajdhani'; font-size: 1.2rem;\"><i class=\"fas fa-microchip\"></i> INPUTS DEL MODELO (X)</h4>\n                        <div style=\"display:flex; align-items:center; gap:5px; font-size:0.8rem; font-weight:bold; color:#7f8c8d;\">\n                            <span>Simulación:</span>\n                            <md-switch ng-model=\"config.sim\" aria-label=\"Sim\" ng-change=\"toggleSim()\" style=\"margin:0\"></md-switch>\n                        </div>\n                    </div>\n                    \n                    <div class=\"sensor-grid\">\n                        <div class=\"sensor-box\">\n                            <div style=\"font-size: 0.8rem; color:#7f8c8d; font-weight:bold;\">MOVIMIENTO (PIR)</div>\n                            <div class=\"s-val\" ng-style=\"{color: sensors.pir ? '#c0392b' : '#27ae60'}\">\n                                {{sensors.pir ? 'DETECTADO' : 'QUIETO'}}\n                            </div>\n                        </div>\n                        <div class=\"sensor-box\">\n                            <div style=\"font-size: 0.8rem; color:#7f8c8d; font-weight:bold;\">LUZ (LDR)</div>\n                            <div class=\"s-val\" style=\"color: #f39c12;\">{{sensors.light}}%</div>\n                        </div>\n                        <div class=\"sensor-box\">\n                            <div style=\"font-size: 0.8rem; color:#7f8c8d; font-weight:bold;\">SONIDO (MIC)</div>\n                            <div class=\"s-val\" style=\"color: #8e44ad;\">{{sensors.sound_pct}}%</div>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"data-card\" style=\"flex: 1; display: flex; flex-direction: column; min-height: 280px;\">\n                    <h4 style=\"margin: 0 0 10px 0; color: var(--text-dark); font-family:'Rajdhani';\"><i class=\"fas fa-project-diagram\"></i> MINERÍA DE PATRONES (SCATTER)</h4>\n                    <div class=\"chart-container\">\n                        <canvas id=\"scatterChart\"></canvas>\n                    </div>\n                </div>\n\n                <div class=\"data-card\" style=\"background: #fdfdfd;\">\n                    <h4 style=\"margin: 0 0 15px 0; color: var(--warning); font-family:'Rajdhani';\"><i class=\"fas fa-sliders-h\"></i> ENTRENAMIENTO: AJUSTAR PARÁMETROS</h4>\n                    \n                    <div class=\"slider-row\">\n                        <div class=\"slider-info\">\n                            <span>Umbral Penalización de Luz (Si es menor, asume que no hay nadie)</span>\n                            <span style=\"color: var(--accent);\">{{config.params.light_threshold}}%</span>\n                        </div>\n                        <input type=\"range\" min=\"0\" max=\"100\" ng-model=\"config.params.light_threshold\" ng-change=\"updateParams()\" \n                               ng-mousedown=\"startDrag()\" ng-mouseup=\"stopDrag()\" ng-touchstart=\"startDrag()\" ng-touchend=\"stopDrag()\">\n                    </div>\n                    \n                    <div class=\"slider-row\">\n                        <div class=\"slider-info\">\n                            <span>Peso del Movimiento PIR (Qué tan importante es la presencia)</span>\n                            <span style=\"color: var(--accent);\">{{config.params.pir_weight}}%</span>\n                        </div>\n                        <input type=\"range\" min=\"0\" max=\"100\" ng-model=\"config.params.pir_weight\" ng-change=\"updateParams()\"\n                               ng-mousedown=\"startDrag()\" ng-mouseup=\"stopDrag()\" ng-touchstart=\"startDrag()\" ng-touchend=\"stopDrag()\">\n                    </div>\n                </div>\n\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n(function(scope) {\n    scope.sensors = { pir: false, light: 0, sound: 0, sound_pct: 0 };\n    scope.prediction = { class: 0, prob: 0 };\n    scope.config = { sim: true, params: { light_threshold: 30, pir_weight: 60 } };\n    \n    var scatterChart = null;\n    var isDragging = false;\n\n    scope.updateParams = function() {\n        scope.send({ topic: \"update_params\", payload: scope.config.params });\n    };\n    \n    scope.toggleSim = function() {\n        scope.send({ topic: \"sim_switch\", payload: scope.config.sim });\n    };\n\n    scope.startDrag = function() { isDragging = true; };\n    scope.stopDrag = function() { isDragging = false; scope.updateParams(); };\n\n    setTimeout(function() {\n        var ctx = document.getElementById('scatterChart');\n        if(ctx) {\n            // CÓDIGO COMPATIBLE CON CHART.JS V2 (VERSIÓN OFFLINE DE NODE-RED)\n            scatterChart = new Chart(ctx, {\n                type: 'scatter',\n                data: {\n                    datasets: [{\n                        label: 'Historial',\n                        data: [],\n                        backgroundColor: [],\n                        pointRadius: 6,\n                        pointHoverRadius: 9,\n                        borderColor: 'rgba(255,255,255,0.8)',\n                        borderWidth: 1,\n                        fill: false,       // Evita sombreados verdes\n                        showLine: false    // Evita lineas conectoras\n                    }]\n                },\n                options: {\n                    responsive: true,\n                    maintainAspectRatio: false,\n                    animation: { duration: 0 }, \n                    legend: { display: true, position: 'top' }, // Leyenda superior\n                    scales: {\n                        xAxes: [{\n                            ticks: { min: 0, max: 100, fontColor: '#7f8c8d' },\n                            gridLines: { color: '#f0f0f0' },\n                            scaleLabel: { \n                                display: true, \n                                labelString: 'Nivel de Luz (%)', \n                                fontColor: '#7f8c8d', \n                                fontStyle: 'bold',\n                                fontFamily: 'Rajdhani'\n                            }\n                        }],\n                        yAxes: [{\n                            ticks: { min: 0, max: 100, fontColor: '#7f8c8d' },\n                            gridLines: { color: '#f0f0f0' },\n                            scaleLabel: { \n                                display: true, \n                                labelString: 'Nivel de Sonido (%)', \n                                fontColor: '#7f8c8d', \n                                fontStyle: 'bold',\n                                fontFamily: 'Rajdhani'\n                            }\n                        }]\n                    }\n                }\n            });\n        }\n    }, 500);\n\n    scope.$watch('msg.payload', function(newVal) {\n        if (!newVal) return;\n\n        scope.sensors = newVal.sensors || { pir: false, light: 0, sound: 0, sound_pct: 0 };\n        scope.prediction = newVal.prediction || { class: 0, prob: 0 };\n        \n        if(newVal.config && !isDragging) {\n             scope.config = newVal.config;\n        }\n\n        if (scatterChart && newVal.sensors) {\n            var dataset = scatterChart.data.datasets[0];\n            \n            // Guardar el valor en PORCENTAJE (eje Y)\n            dataset.data.push({ x: newVal.sensors.light, y: newVal.sensors.sound_pct });\n            \n            var color = newVal.prediction.class === 1 ? 'rgba(192, 57, 43, 0.8)' : 'rgba(39, 174, 96, 0.8)';\n            dataset.backgroundColor.push(color);\n\n            if(dataset.data.length > 30) {\n                dataset.data.shift();\n                dataset.backgroundColor.shift();\n            }\n            scatterChart.update();\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 980,
+        "y": 540,
+        "wires": [
+            [
+                "93562425dcc74259"
+            ]
+        ]
+    },
+    {
+        "id": "af718b621a67c026",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Filtrar Feedback",
+        "func": "if (msg.topic === \"sim_switch\") return msg;\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 240,
+        "wires": [
+            [
+                "5e711952922318f8"
+            ]
+        ]
+    },
+    {
+        "id": "f825c80ca77532e9",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Clock (250ms)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.25",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "5e711952922318f8"
+            ]
+        ]
+    },
+    {
+        "id": "53f317186ef9d67f",
+        "type": "mqtt in",
+        "z": "0b3362ab9d38a37d",
+        "name": "RX Personas Python",
+        "topic": "aula/vision/personas",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "ed2bc80298d2ceb9"
+            ]
+        ]
+    },
+    {
+        "id": "d0175b45adb1fca2",
+        "type": "mqtt in",
+        "z": "0b3362ab9d38a37d",
+        "name": "RX Lentes Python",
+        "topic": "aula/vision/lentes",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "b6de4f2e74aae97d"
+            ]
+        ]
+    },
+    {
+        "id": "ed2bc80298d2ceb9",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Guardar Memoria",
+        "func": "flow.set('cv_personas', parseInt(msg.payload) || 0);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6de4f2e74aae97d",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Guardar Memoria",
+        "func": "flow.set('cv_lentes', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e711952922318f8",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "LÓGICA SENSOR V2 (Hybrid)",
+        "func": "// --- 1. GESTIÓN DE ESTADO ---\nvar sim_active = context.get('sim_active');\nif (sim_active === undefined) sim_active = true;\n\nvar t = context.get('t') || 0;\n\n// --- 2. ENTRADAS DE CONTROL ---\nif (msg.topic === \"sim_switch\") {\n    sim_active = msg.payload;\n    context.set('sim_active', sim_active);\n    return { payload: { config: { sim: sim_active } } };\n}\n\n// --- 3. PROCESAMIENTO DE DATOS ---\nvar d = { sound: 0, light: 0, dist: 0, pres: false, sound_peak: 2000 };\n\nif (sim_active) {\n    if (msg.payload && msg.payload.sound_bruto !== undefined) return null;\n    t += 0.2;\n    context.set('t', t);\n\n    var noise = (Math.random() * 200) - 100;\n    d.sound = Math.floor(2000 + 500 * Math.sin(t * 0.5) + noise);\n    d.dist = 20 + 100 * Math.abs(Math.sin(t * 0.1));\n    d.light = 50 + 30 * Math.cos(t * 0.2);\n\n    if (Math.random() > 0.9) context.set('last_pres', !context.get('last_pres'));\n    d.pres = context.get('last_pres') || false;\n    d.sound_peak = d.sound; \n\n} else {\n    if (!msg.payload || msg.payload.sound_bruto === undefined) return null;\n    d.sound = msg.payload.sound_bruto || 0;\n    d.dist = msg.payload.distancia || 0;\n    d.light = msg.payload.luz_percent || 0;\n    d.pres = msg.payload.presencia || false;\n    d.sound_peak = msg.payload.sound_raw_peak || 2000; \n}\n\n// --- FORZAR NÚMEROS ENTEROS ---\nd.dist = Math.round(d.dist);\nd.light = Math.round(d.light);\n\n// ========================================================\n// DETECCIÓN DE ERRORES / DESCONEXIÓN (TODOS LOS SENSORES)\n// ========================================================\nvar mic_flatline_count = context.get('mic_flatline_count') || 0;\nvar last_mic_val = context.get('last_mic_val') || 0;\n\nif (!sim_active) {\n    if ((d.sound_peak >= 4090 || d.sound_peak <= 10) && (d.sound_peak === last_mic_val)) {\n        mic_flatline_count++;\n    } else {\n        mic_flatline_count = 0;\n    }\n} else {\n    mic_flatline_count = 0;\n}\n\ncontext.set('mic_flatline_count', mic_flatline_count);\ncontext.set('last_mic_val', d.sound_peak);\n\nvar mic_error = (mic_flatline_count >= 12);\n\n// NUEVO: Detección Radar, LDR y PIR\nvar dist_error = (!sim_active && d.dist <= 0);\nvar ldr_error = (!sim_active && d.light <= 0);\nvar pir_error = (!sim_active && (msg.payload.presencia === undefined || msg.payload.presencia === null || msg.payload.pir_error === true));\n// ========================================================\n\n\n// --- 4. LÓGICA DE NEGOCIO --- \nvar sound_pct = Math.min((d.sound / 4095) * 100, 100);\nvar sound_alert = d.sound > 2400 && !mic_error;\n\nif (mic_error) {\n    sound_pct = 0;\n    sound_alert = false;\n}\n\nvar pres_style = d.pres ?\n    { class: 'bg-danger', icon: 'fa-exclamation-triangle', color: '#d63031', text: '¡INTRUSO!' } :\n    { class: 'bg-safe', icon: 'fa-shield-alt', color: '#00b894', text: 'AREA SEGURA' };\n\nvar dist_num = parseFloat(d.dist);\nvar radar_pct = Math.min((dist_num / 200) * 100, 100);\n\nvar zona = { border: '#00b894', icon: 'fa-check-circle', color: '#00b894', text: 'DESPEJADO', tamper: false };\nif (dist_error) {\n    zona = { border: '#d63031', icon: 'fa-unlink', color: '#d63031', text: 'ERROR', tamper: false };\n    radar_pct = 0;\n} else if (dist_num === 0 && !sim_active) {\n    zona = { border: '#95a5a6', icon: 'fa-unlink', color: '#95a5a6', text: 'SIN ACCIÓN', tamper: false };\n} else if (dist_num < 10) {\n    zona = { border: '#d63031', icon: 'fa-hand-paper', color: '#d63031', text: 'SABOTAJE', tamper: true };\n} else if (dist_num < 25) {\n    zona = { border: '#fbc531', icon: 'fa-exclamation-circle', color: '#fbc531', text: 'PRECAUCIÓN', tamper: false };\n}\n\nvar sun = {};\nvar energy = {};\nif (ldr_error) {\n    sun = { color: '#d63031', shadow: 'none', low_light: false };\n    energy = { text: 'ERROR LECTURA', color: '#d63031' };\n} else if (d.light > 30) {\n    sun = { color: '#95a5a6', shadow: 'none', low_light: false };\n    energy = { text: 'Luz Natural', color: '#00b894' };\n} else {\n    sun = { color: '#f1c40f', shadow: '0 0 20px #f1c40f', low_light: true };\n    energy = { text: 'Luz Artificial', color: '#e1b12c' };\n}\n\n// IA Integrada de Python\nvar ai_count = flow.get('cv_personas') || 0;\nvar ai_status = flow.get('cv_lentes') || \"PERSONAS\";\n\nif (sim_active) {\n    ai_count = d.pres ? (Math.floor(Math.random() * 4) + 1) : 0;\n    ai_status = d.pres ? \"SIMULACIÓN ACTIVA\" : \"SIN ACTIVIDAD\";\n}\n\nmsg.payload = {\n    raw: d,\n    ui: {\n        audio: { pct: sound_pct, alert: sound_alert, error: mic_error },\n        env: { \n            pres: pres_style, \n            radar: radar_pct, \n            zona: zona, \n            sun: sun, \n            energy: energy, \n            ldr_error: ldr_error, \n            dist_error: dist_error, \n            pir_error: pir_error \n        },\n        security: { ai_count: ai_count, ai_status: ai_status }\n    },\n    config: {\n        sim: sim_active\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "b2cdac37a3e7036a"
+            ]
+        ]
+    },
+    {
+        "id": "e9eb8623709d40b5",
+        "type": "switch",
+        "z": "0b3362ab9d38a37d",
+        "name": "Es Buzzer?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "buzzer_cmd",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 120,
+        "wires": [
+            [
+                "29fab6b92267fb26"
+            ]
+        ]
+    },
+    {
+        "id": "29fab6b92267fb26",
+        "type": "mqtt out",
+        "z": "0b3362ab9d38a37d",
+        "name": "Salida audio",
+        "topic": "aula/control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "broker_local",
+        "x": 1130,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fd5c6e3fbb3f3b7b",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Clock (5000ms)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 720,
+        "wires": [
+            [
+                "9714e1cdf8ebf83b"
+            ]
+        ]
+    },
+    {
+        "id": "9714e1cdf8ebf83b",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "REGLAS DE AUTOMATIZACIÓN",
+        "func": "// --- 1. GESTIÓN DE ESTADO (MEMORIA PERSISTENTE) ---\n// Se guardan los valores en memoria para no perderlos en cada ciclo de reloj\nvar state = context.get('state') || { \n    light: 50, \n    sound: 15, // AHORA SE MIDE EN PORCENTAJE (0 a 100)\n    presence: true,\n    light_status: false, \n    ac_status: false, \n    timer_idle: 0 \n};\n\nvar sim_active = context.get('sim_active');\nif (sim_active === undefined) sim_active = true;\n\n// --- 2. ENTRADAS DE CONTROL (UI MANUAL) ---\n// Permite al usuario manipular los sliders en la web durante la simulación\nif (msg.topic === \"update_inputs\") {\n    state.light = parseInt(msg.payload.light);\n    state.sound = parseInt(msg.payload.sound);\n    state.presence = msg.payload.presence;\n    if(state.presence) state.timer_idle = 0; // Resetea el temporizador si detecta a alguien\n    context.set('state', state);\n}\n\n// Interrumpe el flujo si el mensaje es solo para cambiar entre Modo Simulación/Real\nif (msg.topic === \"sim_switch\") {\n    sim_active = msg.payload;\n    context.set('sim_active', sim_active);\n    return { \n        payload: { \n            config: { sim: sim_active }, \n            inputs: state, \n            actuators: { light: state.light_status, ac: state.ac_status } \n        } \n    };\n}\n\n// --- 3. PROCESAMIENTO DE DATOS ---\nif (sim_active) {\n    // MODO SIMULACIÓN: Ignoramos los datos físicos del ESP32 si llegan\n    if (msg.payload.sound_bruto !== undefined) return null;\n    \n    // Generamos fluctuaciones aleatorias leves para dar realismo a la gráfica\n    if (msg.topic !== \"update_inputs\") {\n        state.light += Math.floor(Math.random() * 7) - 3; \n        state.light = Math.max(0, Math.min(100, state.light)); // Mantiene límite entre 0-100%\n        \n        state.sound += Math.floor(Math.random() * 5) - 2;\n        state.sound = Math.max(0, Math.min(100, state.sound)); // Mantiene límite entre 0-100%\n        \n        if (Math.random() < 0.02) state.presence = !state.presence;\n    }\n} else {\n    // MODO REAL: Tomamos los valores directos del microcontrolador ESP32\n    if (msg.payload.sound_bruto === undefined && msg.topic !== \"update_inputs\") return null;\n    \n    if (msg.payload.sound_bruto !== undefined) {\n        state.light = Math.round(msg.payload.luz_percent || 0);\n        \n        // CONVERSIÓN DE RUIDO A PORCENTAJE (Escala 0-4095 mapeada a 0-100%)\n        var raw_sound = msg.payload.sound_bruto || 0;\n        state.sound = Math.round(Math.min((raw_sound / 4095) * 100, 100));\n        \n        state.presence = msg.payload.presencia || false;\n    }\n}\n\n// --- 4. LÓGICA DOMÓTICA (REGLAS DE NEGOCIO) ---\n\n// Temporizador de inactividad (Para apagar luces si el aula queda vacía)\nif (!state.presence) {\n    state.timer_idle += 1;\n} else {\n    state.timer_idle = 0;  \n}\n\n// A. Actuador: ILUMINACIÓN ARTIFICIAL\n// REGLA 1: Se enciende SOLO si hay presencia Y la luz natural es 30% o menos.\nif (state.presence && state.light <= 30) {\n    state.light_status = true;\n} else {\n    // REGLA 2: Se apaga si el aula lleva inactiva mucho tiempo O si el Sol da luz mayor al 30%.\n    if (state.timer_idle > 30 || state.light > 30) {\n        state.light_status = false;\n    }\n}\n\n// B. Actuador: VENTILACIÓN / AFORO\n// REGLA 3: El ventilador se enciende estrictamente si el nivel de ruido supera el 30%.\nvar previous_ac_status = state.ac_status;\n\nif (state.sound > 30) {\n    state.ac_status = true;\n} else {\n    state.ac_status = false;\n}\n\n// Guardamos el nuevo estado calculado en memoria\ncontext.set('state', state);\n\n// --- 5. ENRUTAMIENTO DE SALIDAS (UI y HARDWARE) ---\n// Empaquetado de datos para dibujar el Dashboard web\nvar ui_msg = {\n    payload: {\n        inputs: {\n            light: state.light,\n            sound: state.sound,\n            presence: state.presence,\n            timer: state.timer_idle\n        },\n        actuators: {\n            light: state.light_status,\n            ac: state.ac_status\n        },\n        config: {\n            sim: sim_active\n        }\n    }\n};\n\n// Construcción del comando MQTT solo si el ventilador cambió de estado (Optimiza red)\nvar mqtt_cmd_msg = null;\nif (state.ac_status !== previous_ac_status && !sim_active) {\n    mqtt_cmd_msg = {\n        payload: state.ac_status ? \"FAN_ON\" : \"FAN_OFF\"\n    };\n}\n\n// Retorno múltiple: \n// Array índice 0 -> Se envía a la interfaz gráfica\n// Array índice 1 -> Se envía vía MQTT al ESP32\nreturn [ui_msg, mqtt_cmd_msg];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 720,
+        "wires": [
+            [
+                "5a2d4607792c2722"
+            ],
+            [
+                "a6a6dce32106b2ee"
+            ]
+        ]
+    },
+    {
+        "id": "a6a6dce32106b2ee",
+        "type": "mqtt out",
+        "z": "0b3362ab9d38a37d",
+        "name": "MQTT Control Actuadores",
+        "topic": "aula/control",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "broker_local",
+        "x": 990,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5a2d4607792c2722",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "group_esc4_main",
+        "name": "UI SC4 - AULA INTELIGENTE",
+        "order": 1,
+        "width": "20",
+        "height": "16",
+        "format": "<!DOCTYPE html>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n<style>\n    :root { --primary-bg: #ecf0f1; --accent: #2980b9; --success: #27ae60; --danger: #c0392b; --warning: #f39c12; --text-dark: #2c3e50; }\n    .main-container { display: flex; height: 100%; font-family: 'Roboto', sans-serif; background-color: var(--primary-bg); color: var(--text-dark); overflow: hidden; width: 100%; position: absolute; top:0; left:0; }\n    .content-area { flex: 1; padding: 20px; overflow-y: auto; height: 100%; box-sizing: border-box; width: 100%; }\n\n    /* --- LAYOUT RESPONSIVE --- */\n    .sc4-layout { \n        display: flex; \n        flex-wrap: wrap; \n        gap: 20px; \n        padding: 10px; \n        align-items: stretch; \n        min-height: 100%;\n    }\n    \n    /* PANEL IZQUIERDO: ACTUADORES */\n    .actuators-panel { \n        flex: 1 1 350px;\n        background: white; \n        border-radius: 15px; \n        padding: 30px; \n        display: flex; \n        flex-direction: column; \n        gap: 20px; \n        justify-content: center; \n        position: relative; \n        min-height: 400px; \n        box-sizing: border-box; \n        border: 1px solid #e0e0e0;\n    }\n    \n    .actuator-card { background: #fdfdfd; border-radius: 15px; padding: 20px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; transition: all 0.3s; height: 130px; border: 2px solid #eee; }\n    .icon-box { width: 90px; text-align: center; }\n    .actuator-icon { font-size: 3.5rem; color: #bdc3c7; transition: color 0.3s; }\n    .actuator-info { flex: 1; margin-left: 20px; }\n    .actuator-label { font-weight: bold; font-size: 1.3rem; color: var(--text-dark); font-family: 'Rajdhani'; }\n    .status-text { font-size: 1.1rem; margin-top: 5px; font-family: 'Orbitron'; color: #95a5a6; font-weight: bold; }\n\n    /* Estados Activos */\n    .actuator-card.active-light { background: rgba(243, 156, 18, 0.05); border-color: var(--warning); box-shadow: 0 4px 15px rgba(243, 156, 18, 0.15); }\n    .active-light .actuator-icon { color: var(--warning); text-shadow: 0 0 15px rgba(243, 156, 18, 0.5); }\n    .active-light .status-text { color: var(--warning); }\n    \n    .actuator-card.active-cool { background: rgba(41, 128, 185, 0.05); border-color: var(--accent); box-shadow: 0 4px 15px rgba(41, 128, 185, 0.15); }\n    .active-cool .actuator-icon { color: var(--accent); animation: spin 1.5s linear infinite; }\n    .active-cool .status-text { color: var(--accent); }\n\n    /* PANEL DERECHO: CONTROLES */\n    .controls-panel { \n        flex: 1 1 350px;\n        display: flex; \n        flex-direction: column; \n        gap: 20px; \n    }\n    .control-card { background: white; color: var(--text-dark); border-radius: 15px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #e0e0e0;}\n    .control-card-dark { background: #2c3e50; color: white; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }\n    \n    input[type=range] { width: 100%; margin-top: 15px; cursor: pointer; accent-color: var(--accent); }\n    .val-display { font-size: 1.8rem; font-weight: bold; color: var(--accent); float: right; font-family: 'Orbitron'; margin-top: -5px;}\n    \n    /* Animaciones */\n    @keyframes spin { 100% { transform: rotate(360deg); } }\n    .timer-bar { width: 100%; height: 8px; background: #eee; margin-top: 10px; border-radius: 5px; overflow: hidden; }\n    .timer-fill { height: 100%; background: var(--danger); width: 0%; transition: width 0.2s linear; }\n    \n    .sim-overlay { position: absolute; top: 15px; right: 15px; background: var(--warning); color: white; padding: 5px 15px; border-radius: 5px; font-weight: bold; font-size: 0.8rem; z-index: 10; }\n\n</style>\n\n<div class=\"main-container\">\n    <div class=\"content-area\">\n        <div class=\"sc4-layout\">\n            \n            <div class=\"actuators-panel\">\n                <div class=\"sim-overlay\" ng-show=\"config.sim\">SIMULACIÓN</div>\n                <div style=\"font-family: 'Rajdhani'; font-size: 1.8rem; color: var(--text-dark); border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 10px; text-align: center; font-weight: bold;\">\n                    <i class=\"fas fa-home\" style=\"color:var(--accent);\"></i> AULA INTELIGENTE (DOMÓTICA)\n                </div>\n\n                <div class=\"actuator-card\" ng-class=\"{'active-light': actuators.light}\">\n                    <div class=\"icon-box\"><i class=\"fas fa-lightbulb actuator-icon\"></i></div>\n                    <div class=\"actuator-info\">\n                        <div class=\"actuator-label\">ILUMINACIÓN (AUTO)</div>\n                        <div class=\"status-text\">{{actuators.light ? 'ENCENDIDA' : 'APAGADA'}}</div>\n                        <div style=\"font-size: 0.75rem; color: #7f8c8d; margin-top: 12px; display: flex; justify-content: space-between; font-weight: bold;\">\n                            <span>Timer de Inactividad:</span>\n                            <span>{{timer_pct}}%</span>\n                        </div>\n                        <div class=\"timer-bar\"><div class=\"timer-fill\" style=\"width: {{timer_pct}}%\"></div></div>\n                    </div>\n                </div>\n\n                <div class=\"actuator-card\" ng-class=\"{'active-cool': actuators.ac}\">\n                    <div class=\"icon-box\"><i class=\"fas fa-fan actuator-icon\"></i></div>\n                    <div class=\"actuator-info\">\n                        <div class=\"actuator-label\">VENTILACIÓN (AFORO)</div>\n                        <div class=\"status-text\">{{actuators.ac ? 'SISTEMA ACTIVO' : 'SISTEMA OFF'}}</div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"controls-panel\">\n                \n                <div class=\"control-card\">\n                    <div style=\"margin-bottom: 10px; font-size: 1.1rem; font-weight: bold;\">\n                        <i class=\"fas fa-sun\" style=\"color: var(--warning);\"></i> LUZ NATURAL (SOL) \n                        <span class=\"val-display\">{{inputs.light}}%</span>\n                    </div>\n                    <input type=\"range\" min=\"0\" max=\"100\" ng-model=\"inputs.light\" ng-change=\"manualOverride()\" \n                           ng-mousedown=\"startInteract()\" ng-mouseup=\"endInteract()\" ng-touchstart=\"startInteract()\" ng-touchend=\"endInteract()\">\n                    <div style=\"font-size: 0.8rem; color: #7f8c8d; margin-top: 10px;\">\n                        <i class=\"fas fa-info-circle\"></i> Si > 30%, se apaga la luz artificial.\n                    </div>\n                </div>\n\n                <div class=\"control-card\">\n                    <div style=\"margin-bottom: 10px; font-size: 1.1rem; font-weight: bold;\">\n                        <i class=\"fas fa-volume-up\" style=\"color: #8e44ad;\"></i> NIVEL DE RUIDO \n                        <span class=\"val-display\">{{inputs.sound}}%</span>\n                    </div>\n                    \n                    <input type=\"range\" min=\"0\" max=\"100\" ng-model=\"inputs.sound\" ng-change=\"manualOverride()\" \n                           ng-mousedown=\"startInteract()\" ng-mouseup=\"endInteract()\" ng-touchstart=\"startInteract()\" ng-touchend=\"endInteract()\">\n                    <div style=\"font-size: 0.8rem; color: #7f8c8d; margin-top: 10px;\">\n                        <i class=\"fas fa-info-circle\"></i> Si > 30%, se activa Ventilación.\n                    </div>\n                </div>\n\n                <div class=\"control-card-dark\">\n                    <div style=\"display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px;\">\n                        <span style=\"font-weight:bold; font-size: 1.1rem;\"><i class=\"fas fa-walking\"></i> SENSOR PIR</span>\n                        <div style=\"display:flex; align-items:center; gap:5px; font-size:0.8rem; color:#bdc3c7;\">\n                            <span>Simulación:</span>\n                            <md-switch ng-model=\"config.sim\" aria-label=\"Sim\" ng-change=\"toggleSim()\" style=\"margin:0\"></md-switch>\n                        </div>\n                    </div>\n                    \n                    <div style=\"display: flex; justify-content: center; gap: 15px;\">\n                        <button ng-click=\"setPresence(true)\" style=\"flex: 1; padding: 15px 0; background: var(--success); border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);\"\n                                ng-style=\"{'opacity': inputs.presence ? 1 : 0.4, 'transform': inputs.presence ? 'scale(1.05)' : 'scale(1)'}\">\n                            DETECTADO\n                        </button>\n                        <button ng-click=\"setPresence(false)\" style=\"flex: 1; padding: 15px 0; background: var(--danger); border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);\"\n                                ng-style=\"{'opacity': !inputs.presence ? 1 : 0.4, 'transform': !inputs.presence ? 'scale(1.05)' : 'scale(1)'}\">\n                            VACÍO\n                        </button>\n                    </div>\n                    <div style=\"text-align: center; margin-top: 25px; font-weight: bold; font-size: 1.2rem;\"\n                         ng-style=\"{color: inputs.presence ? '#2ecc71' : '#e74c3c'}\">\n                        {{inputs.presence ? 'MOVIMIENTO DETECTADO' : 'SIN MOVIMIENTO (INACTIVO)'}}\n                    </div>\n                </div>\n\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n(function(scope) {\n    // Se inicializa en 15% en lugar de los 500 crudos anteriores\n    scope.inputs = { light: 50, sound: 15, presence: true, timer: 0 };\n    scope.actuators = { light: false, ac: false };\n    scope.config = { sim: true };\n    scope.timer_pct = 0;\n    \n    scope.isUserInteracting = false;\n    scope.startInteract = function() { scope.isUserInteracting = true; };\n    scope.endInteract = function() { \n        scope.isUserInteracting = false; \n        scope.manualOverride(); \n    };\n\n    scope.manualOverride = function() {\n        scope.send({ topic: \"update_inputs\", payload: scope.inputs });\n    };\n    \n    scope.setPresence = function(state) {\n        scope.inputs.presence = state;\n        scope.manualOverride();\n    };\n\n    scope.toggleSim = function() {\n        scope.send({ topic: \"sim_switch\", payload: scope.config.sim });\n    };\n\n    scope.$watch('msg.payload', function(newVal) {\n        if (!newVal) return;\n\n        scope.actuators = newVal.actuators || { light: false, ac: false };\n        if(newVal.config) scope.config = newVal.config;\n        \n        var timer = newVal.inputs ? newVal.inputs.timer : 0;\n        scope.timer_pct = Math.min((timer / 30) * 100, 100).toFixed(0);\n\n        if (!scope.isUserInteracting && newVal.inputs) {\n            scope.inputs.light = newVal.inputs.light;\n            scope.inputs.sound = newVal.inputs.sound;\n            scope.inputs.presence = newVal.inputs.presence;\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 740,
+        "wires": [
+            [
+                "fe1ab85c87076848"
+            ]
+        ]
+    },
+    {
+        "id": "fe1ab85c87076848",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Filtrar Feedback 4",
+        "func": "if (msg.topic === \"update_inputs\" || msg.topic === \"sim_switch\") return msg;\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "9714e1cdf8ebf83b"
+            ]
+        ]
+    },
+    {
+        "id": "daemon_nlp",
+        "type": "daemon",
+        "z": "0b3362ab9d38a37d",
+        "name": "IA Textos (NLP)",
+        "command": "python3",
+        "args": "/data/nlp_ia.py",
+        "cr": false,
+        "redo": true,
+        "op": "string",
+        "x": 340,
+        "y": 1420,
+        "wires": [
+            [
+                "debug_ia_out"
+            ],
+            [
+                "debug_ia_err"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "daemon_vision",
+        "type": "daemon",
+        "z": "0b3362ab9d38a37d",
+        "name": "IA Cámara (Visión)",
+        "command": "python3",
+        "args": "/data/vision_ia.py",
+        "cr": false,
+        "redo": true,
+        "op": "string",
+        "x": 350,
+        "y": 1500,
+        "wires": [
+            [
+                "debug_ia_out"
+            ],
+            [
+                "debug_ia_err"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "debug_ia_out",
+        "type": "debug",
+        "z": "0b3362ab9d38a37d",
+        "name": "Log IA (Consola)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "debug_ia_err",
+        "type": "debug",
+        "z": "0b3362ab9d38a37d",
+        "name": "Errores IA",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "start_daemons",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Arrancar",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 100,
+        "y": 1460,
+        "wires": [
+            [
+                "daemon_nlp",
+                "daemon_vision"
+            ]
+        ]
+    },
+    {
+        "id": "637293768339852a",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Detectar < 15cm (Reset)",
+        "func": "var dist = parseFloat(msg.payload);\nif (dist > 0 && dist < 15) {\n    return { payload: \"reset_command_internal\" };\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 860,
+        "wires": [
+            [
+                "295fc0c365fbc93f",
+                "aa573cc79a6703eb",
+                "c39ce9ce2a3323a2",
+                "26b303ae4521b1ad"
+            ]
+        ]
+    },
+    {
+        "id": "fcd2dc2852219104",
+        "type": "mqtt in",
+        "z": "0b3362ab9d38a37d",
+        "name": "RX Distancia",
+        "topic": "escenario5/sensores/ultrasonico",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 860,
+        "wires": [
+            [
+                "637293768339852a"
+            ]
+        ]
+    },
+    {
+        "id": "81d84cca7b977b04",
+        "type": "ui_form",
+        "z": "0b3362ab9d38a37d",
+        "name": "",
+        "label": "",
+        "group": "7bf2b77b7b1be31a",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Escribe una palabra u oración:",
+                "value": "palabra",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "palabra": ""
+        },
+        "payload": "",
+        "submit": "ENVIAR PARTICIPACIÓN",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 230,
+        "y": 1060,
+        "wires": [
+            [
+                "0cae06f630a35fdb"
+            ]
+        ]
+    },
+    {
+        "id": "0cae06f630a35fdb",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Enrutar Datos",
+        "func": "var input = \"\";\n\nif (typeof msg.payload === \"object\" && msg.payload.palabra) {\n    input = msg.payload.palabra;\n} else if (typeof msg.payload === \"string\") {\n    input = msg.payload;\n}\n\nif (input.trim() !== \"\") {\n    flow.set(\"last_input_sentence\", input);\n    msg.payload = input;\n    \n    // MAGIA DE SINCRONIZACIÓN: Destruimos la etiqueta privada para que sea público\n    delete msg.socketid;\n    delete msg._socketid;\n    \n    return [msg, msg];\n}\nreturn [null, null];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1060,
+        "wires": [
+            [
+                "295fc0c365fbc93f",
+                "aa573cc79a6703eb"
+            ],
+            [
+                "f781e87e9a6fe86a"
+            ]
+        ]
+    },
+    {
+        "id": "295fc0c365fbc93f",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Procesador Nube Palabras",
+        "func": "delete msg.socketid;\ndelete msg._socketid;\n\nvar wordMap = flow.get(\"sc5_wordMap\") || {};\nvar input = msg.payload;\nvar colors = [\"#2980b9\", \"#27ae60\", \"#8e44ad\", \"#f39c12\", \"#d35400\", \"#16a085\", \"#1abc9c\"];\n\nif (input === \"reset_command_internal\") {\n    wordMap = {}; \n    flow.set(\"sc5_wordMap\", wordMap);\n    msg.payload = [];\n    return msg;\n}\n\nif (typeof input === 'string' && input.trim() !== '') {\n    var words = input.toLowerCase().replace(/[^a-zA-Z0-9 áéíóúñ]/g, \"\").split(\" \");\n    words.forEach(function(w) {\n        if (w.trim() !== \"\") { \n            if (wordMap[w]) wordMap[w].count++;\n            else {\n                var rndColor = colors[Math.floor(Math.random() * colors.length)];\n                wordMap[w] = { count: 1, color: rndColor };\n            }\n        }\n    });\n    flow.set(\"sc5_wordMap\", wordMap);\n}\n\nvar maxCount = 1;\nfor (var k in wordMap) {\n    if (wordMap[k].count > maxCount) maxCount = wordMap[k].count;\n}\n\nvar result = [];\nfor (var key in wordMap) {\n    var scale = wordMap[key].count / maxCount; \n    var size = 15 + (scale * 50); \n    result.push({ word: key, size: size + \"px\", color: wordMap[key].color, count: wordMap[key].count });\n}\n\nresult.sort(function(a, b) { return b.count - a.count; });\nmsg.payload = result.slice(0, 45);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 860,
+        "wires": [
+            [
+                "dfc12ac8d6e94510"
+            ]
+        ]
+    },
+    {
+        "id": "c39ce9ce2a3323a2",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Procesador Emociones NLP",
+        "func": "delete msg.socketid;\ndelete msg._socketid;\n\nvar emotionMap = flow.get(\"sc5_emotionMap\") || {\n    \"Feliz 😄\": { count: 0, color: \"#27ae60\" },\n    \"Triste 😢\": { count: 0, color: \"#2980b9\" },\n    \"Enojado 😡\": { count: 0, color: \"#c0392b\" },\n    \"Sorprendido 😲\": { count: 0, color: \"#8e44ad\" },\n    \"Neutro 😐\": { count: 0, color: \"#7f8c8d\" }\n};\n\nvar input = msg.payload;\n\nif (input === \"reset_command_internal\") {\n    for(var k in emotionMap) emotionMap[k].count = 0;\n    flow.set(\"sc5_emotionMap\", emotionMap);\n    msg.payload = [];\n    return msg;\n}\n\nif (emotionMap[input] !== undefined) {\n    emotionMap[input].count++;\n    flow.set(\"sc5_emotionMap\", emotionMap);\n}\n\nvar maxCount = 1;\nfor (var k in emotionMap) {\n    if (emotionMap[k].count > maxCount) maxCount = emotionMap[k].count;\n}\n\nvar result = [];\nfor (var key in emotionMap) {\n    if (emotionMap[key].count > 0) {\n        var scale = emotionMap[key].count / maxCount;\n        var size = 20 + (scale * 30); \n        result.push({ word: key, size: size + \"px\", color: emotionMap[key].color, count: emotionMap[key].count });\n    }\n}\n\nresult.sort(function(a, b) { return b.count - a.count; });\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1040,
+        "wires": [
+            [
+                "54e03e80521f0f7c"
+            ]
+        ]
+    },
+    {
+        "id": "dfc12ac8d6e94510",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "9329023c5deb7889",
+        "name": "Nube HTML Palabras",
+        "order": 1,
+        "width": "11",
+        "height": "14",
+        "format": "<div style=\"\n    display: flex; \n    flex-wrap: wrap; \n    justify-content: center; \n    align-content: flex-start;\n    height: 100%; \n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    background: white;\n    border-radius: 10px;\n    padding: 20px;\n    border: 1px solid #eee;\n    box-sizing: border-box;\n\">\n    <div ng-repeat=\"item in msg.payload track by $index\" \n         style=\"\n            margin: 10px; \n            font-weight: bold;\n            font-family: 'Rajdhani', sans-serif;\n            transition: all 0.5s ease;\n            font-size: {{item.size}};\n            color: {{item.color}};\n            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\n            text-align: center;\n            word-wrap: break-word;\n         \">\n        {{item.word}}\n    </div>\n    \n    <div ng-if=\"!msg.payload.length\" style=\"color: #bdc3c7; font-size: 1.2rem; font-family: 'Rajdhani'; font-weight:bold; margin-top:20%;\">\n        <i class=\"fas fa-comment-dots\"></i> Esperando palabras...\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1150,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54e03e80521f0f7c",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "ef51176dfe264c5e",
+        "name": "Nube HTML Emociones",
+        "order": 1,
+        "width": "8",
+        "height": "14",
+        "format": "<div style=\"\n    display: flex; \n    flex-wrap: wrap; \n    justify-content: center; \n    align-content: flex-start;\n    height: 100%; \n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    background: #fdfdfd;\n    border-radius: 10px;\n    padding: 20px;\n    border: 1px solid #eee;\n    box-sizing: border-box;\n\">\n    <div ng-repeat=\"item in msg.payload track by $index\" \n         style=\"\n            margin: 15px; \n            font-weight: bold;\n            font-family: 'Orbitron', sans-serif;\n            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n            font-size: {{item.size}};\n            color: {{item.color}};\n            text-align: center;\n            word-wrap: break-word;\n         \">\n        {{item.word}}\n    </div>\n    \n    <div ng-if=\"!msg.payload.length\" style=\"color: #bdc3c7; font-size: 1.2rem; font-family: 'Rajdhani'; font-weight:bold; margin-top:30%;\">\n        <i class=\"fas fa-brain\"></i> IA Analizando...\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1170,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b207cd6c32bf92b2",
+        "type": "mqtt out",
+        "z": "0b3362ab9d38a37d",
+        "name": "TX Buzzer",
+        "topic": "escenario5/actuadores/buzzer",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "broker_local",
+        "x": 1100,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "aa573cc79a6703eb",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Trigger BEEP",
+        "func": "msg.payload = \"BEEP\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 920,
+        "wires": [
+            [
+                "b207cd6c32bf92b2"
+            ]
+        ]
+    },
+    {
+        "id": "92f1ede0cce0018f",
+        "type": "ui_switch",
+        "z": "0b3362ab9d38a37d",
+        "name": "Modo Simulación",
+        "label": "Generar Datos Auto",
+        "tooltip": "Genera oraciones aleatorias",
+        "group": "d8fbc7630c99a439",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "simulacion",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 230,
+        "y": 1240,
+        "wires": [
+            [
+                "9133316a83d9a3bc"
+            ]
+        ]
+    },
+    {
+        "id": "f14ddca9617a0463",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Reloj Simulación",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tick",
+        "payloadType": "str",
+        "x": 250,
+        "y": 1180,
+        "wires": [
+            [
+                "fd3d6655ef2d91e7"
+            ]
+        ]
+    },
+    {
+        "id": "9133316a83d9a3bc",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Control Flujo Sim",
+        "func": "flow.set(\"sim_active\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd3d6655ef2d91e7",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Generador Aleatorio (NLP)",
+        "func": "var isActive = flow.get(\"sim_active\");\nif (!isActive) return null;\n\nvar frases = [\n    \"Estoy muy feliz hoy\", \n    \"Qué triste noticia\", \n    \"Esto es genial\",\n    \"Me hace enojar mucho\", \n    \"Wow esto es asombroso\", \n    \"Proyecto de IoT con NodeRED\", \n    \"Me siento mal\",\n    \"Excelente presentación\",\n    \"Tengo rabia\"\n];\nvar randomPhrase = frases[Math.floor(Math.random() * frases.length)];\n\nmsg.payload = randomPhrase;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "0cae06f630a35fdb"
+            ]
+        ]
+    },
+    {
+        "id": "6f953587afee2b38",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "d8fbc7630c99a439",
+        "name": "Mostrar QR",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "<div style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; height:100%;\">\n    <p style=\"font-weight:bold; color:#2c3e50; margin-bottom:5px;\">Escanea para participar:</p>\n    \n    <img src=\"{{msg.payload}}\" alt=\"QR Code\" style=\"width: 150px; height: 150px; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\"/>\n    \n    <p style=\"font-size: 11px; margin-top: 5px; color:#7f8c8d;\">Escanea con tu celular</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1150,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3d501f163bf309c",
+        "type": "ui_button",
+        "z": "0b3362ab9d38a37d",
+        "name": "",
+        "group": "d8fbc7630c99a439",
+        "order": 3,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "label": "Borrar Nubes (Manual)",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#c0392b",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "reset_command_internal",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 920,
+        "wires": [
+            [
+                "295fc0c365fbc93f",
+                "aa573cc79a6703eb",
+                "c39ce9ce2a3323a2",
+                "26b303ae4521b1ad"
+            ]
+        ]
+    },
+    {
+        "id": "b5e567b0f691bcaf",
+        "type": "qrcode-generator",
+        "z": "0b3362ab9d38a37d",
+        "name": "Generador QR",
+        "qrtype": "",
+        "text2qrText": "http://192.168.1.30:1880/ui/#!/6",
+        "ssid": "",
+        "hiddenssid": false,
+        "wifitype": "",
+        "phonenum": "",
+        "smsphonenum": "",
+        "smstext": "",
+        "mailto": "",
+        "mailsubject": "",
+        "mailbody": "",
+        "latitude": "",
+        "longitude": "",
+        "colorlight": "#ffffff",
+        "colordark": "#000000",
+        "printstatus": false,
+        "x": 980,
+        "y": 1300,
+        "wires": [
+            [
+                "6f953587afee2b38"
+            ]
+        ]
+    },
+    {
+        "id": "db5bb7eea55341f3",
+        "type": "mqtt in",
+        "z": "0b3362ab9d38a37d",
+        "name": "RX Resultado IA",
+        "topic": "aula/nube/resultado",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 980,
+        "wires": [
+            [
+                "c39ce9ce2a3323a2",
+                "26b303ae4521b1ad"
+            ]
+        ]
+    },
+    {
+        "id": "f781e87e9a6fe86a",
+        "type": "mqtt out",
+        "z": "0b3362ab9d38a37d",
+        "name": "TX Analizar IA",
+        "topic": "aula/nube/analizar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "broker_local",
+        "x": 660,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "26b303ae4521b1ad",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Emparejar Tabla Custom",
+        "func": "delete msg.socketid;\ndelete msg._socketid;\n\nvar historyMap = flow.get(\"sc5_history\") || [];\n\nif (msg.payload === \"reset_command_internal\") {\n    historyMap = [];\n    flow.set(\"sc5_history\", historyMap);\n    msg.payload = [];\n    return msg;\n}\n\nvar emotion = msg.payload;\nvar lastInput = flow.get(\"last_input_sentence\");\n\nif (emotion && lastInput) {\n    historyMap.unshift({\n        \"oracion\": lastInput,\n        \"emocion\": emotion\n    });\n    \n    if (historyMap.length > 50) historyMap.pop();\n    flow.set(\"sc5_history\", historyMap);\n    \n    msg.payload = historyMap;\n    flow.set(\"last_input_sentence\", null);\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 980,
+        "wires": [
+            [
+                "9cb5e6068538c0b3"
+            ]
+        ]
+    },
+    {
+        "id": "9cb5e6068538c0b3",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "5fe68977a9bfa8ed",
+        "name": "Tabla HTML Custom (100% Responsiva)",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<style>\n    .custom-table-container {\n        width: 100%;\n        max-height: 450px;\n        overflow-y: auto;\n        background: #fff;\n        border-radius: 8px;\n        box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n    }\n    .custom-table {\n        width: 100%;\n        border-collapse: collapse;\n        font-family: 'Roboto', sans-serif;\n    }\n    .custom-table th {\n        background: #2980b9;\n        color: white;\n        padding: 12px;\n        text-align: left;\n        position: sticky;\n        top: 0;\n        z-index: 1;\n    }\n    .custom-table td {\n        padding: 12px;\n        border-bottom: 1px solid #ecf0f1;\n        color: #2c3e50;\n    }\n    .custom-table tr:nth-child(even) {\n        background-color: #f8f9fa;\n    }\n    .custom-table tr:hover {\n        background-color: #e8f4f8;\n    }\n</style>\n\n<div class=\"custom-table-container\">\n    <table class=\"custom-table\">\n        <thead>\n            <tr>\n                <th>Oración Ingresada</th>\n                <th>Emoción</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat=\"row in msg.payload track by $index\">\n                <td>{{row.oracion}}</td>\n                <td style=\"font-weight: bold; font-size: 1.1em;\">{{row.emocion}}</td>\n            </tr>\n            <tr ng-if=\"!msg.payload.length\">\n                <td colspan=\"2\" style=\"text-align: center; color: #95a5a6; padding: 20px;\">\n                    <i class=\"fa fa-history\"></i> Aún no hay participaciones.\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0e7e0ca14075265",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "7bf2b77b7b1be31a",
+        "name": "Ocultar Menú en Celular",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<style>\n    /* Ocultar el menú lateral en la pestaña del alumno (Tab 6) para que no se escape */\n    @media only screen and (max-width: 1024px) {\n        md-toolbar button.md-icon-button, md-sidenav, .md-sidenav-backdrop {\n            display: none !important;\n        }\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 230,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efd6cdd37620d7f8",
+        "type": "inject",
+        "z": "0b3362ab9d38a37d",
+        "name": "Al Iniciar Node-RED",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1300,
+        "wires": [
+            [
+                "efde8d4c97b3a602"
+            ]
+        ]
+    },
+    {
+        "id": "efde8d4c97b3a602",
+        "type": "exec",
+        "z": "0b3362ab9d38a37d",
+        "command": "hostname -I | awk '{print $1}'",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Leer IP LAN",
+        "x": 460,
+        "y": 1300,
+        "wires": [
+            [
+                "affa524e5f408a30"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "affa524e5f408a30",
+        "type": "function",
+        "z": "0b3362ab9d38a37d",
+        "name": "Armar URL Nube de Palabras (Tab 6)",
+        "func": "// Limpiar espacios o saltos de línea de la respuesta de Linux\nvar ip = msg.payload.trim();\n\n// Si por alguna razón no hay IP, usar localhost por defecto para evitar errores\nif (ip === \"\") {\n    ip = \"127.0.0.1\";\n}\n\n// Construir la URL completa para el Tab 7 (Encuesta)\nmsg.payload = \"http://\" + ip + \":1880/ui/#!/6\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1300,
+        "wires": [
+            [
+                "b5e567b0f691bcaf"
+            ]
+        ]
+    },
+    {
+        "id": "b2cdac37a3e7036a",
+        "type": "ui_template",
+        "z": "0b3362ab9d38a37d",
+        "group": "group_esc1_v2",
+        "name": "UI SC1 - TIEMPO REAL (RESPONSIVE)",
+        "order": 1,
+        "width": "20",
+        "height": "16",
+        "format": "<!DOCTYPE html>\n<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n<style>\n    * { box-sizing: border-box; }\n    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }\n    :root { --primary-bg: #1e272e; --accent: #00a8ff; --success: #00b894; --danger: #d63031; --warning: #fbc531; }\n    .main-container { display: flex; height: 100%; width: 100%; font-family: 'Roboto', sans-serif; background-color: #dcdde1; color: #2f3640; overflow: hidden; position: absolute; top:0; left:0; }\n    .sub-sidebar { width: 200px; flex-shrink: 0; background: linear-gradient(180deg, #2f3640 0%, #191f26 100%); display: flex; flex-direction: column; padding: 20px 10px; gap: 10px; box-shadow: 5px 0 15px rgba(0,0,0,0.1); overflow-y: auto; z-index: 10; }\n    .nav-btn { background: rgba(255,255,255,0.05); color: #bdc3c7; border: none; padding: 15px; text-align: left; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: bold; border-radius: 10px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 10px; }\n    .nav-btn:hover { background: rgba(255,255,255,0.1); color: white; transform: translateX(5px); }\n    .nav-btn.active { background: var(--accent); color: white; box-shadow: 0 5px 15px rgba(0, 168, 255, 0.3); }\n    .nav-btn.active-danger { background: #e74c3c !important; color: white !important; animation: pulseBtn 1s infinite; box-shadow: 0 0 15px #e74c3c; }\n    .content-area { flex: 1; padding: 20px; overflow-y: auto; overflow-x: hidden; height: 100%; position: relative; }\n    .audio-layout { display: flex; flex-direction: column; height: 100%; gap: 20px; }\n    .audio-top { display: flex; flex-direction: row; gap: 20px; width: 100%; flex-shrink: 0; }\n    .env-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; height: 100%; }\n    .env-col { display: flex; flex-direction: column; gap: 20px; height: 100%; min-height: 0; }\n    .cam-layout { display: flex; flex-direction: row; gap: 20px; height: 100%; }\n    .env-card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transition: 0.3s; height: 100%; flex: 1; min-height: 0; overflow: hidden; }\n    .env-title { font-family: 'Rajdhani', sans-serif; font-size: 1.1rem; color: #7f8c8d; text-transform: uppercase; margin-bottom: 10px; width: 100%; border-bottom: 1px solid #eee; padding-bottom: 5px; flex-shrink: 0; }\n    .big-icon { font-size: 3.5rem; margin-bottom: 10px; transition: 0.3s; }\n    .big-data { font-size: 2.5rem; font-weight: 700; color: #2f3640; }\n    .status-badge { padding: 8px 20px; border-radius: 30px; font-weight: bold; color: white; margin-top: 10px; font-size: 1.1rem; }\n    .sim-badge { position: absolute; top: 10px; right: 20px; background: var(--warning); color: #2f3640; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-family: 'Rajdhani'; box-shadow: 0 0 10px var(--warning); display: none; z-index: 100; }\n    .vu-horizontal { width: 100%; height: 25px; background: #dfe6e9; border-radius: 15px; overflow: hidden; border: 1px solid #b2bec3; margin-top: 10px; }\n    .vu-bar { height: 100%; background: linear-gradient(to right, var(--success), var(--warning), var(--danger)); transition: width 0.05s ease-out; }\n    .siren { width: 60px; height: 60px; border-radius: 50%; background: #b2bec3; border: 4px solid #636e72; transition: 0.2s; }\n    .siren.alert { background: #ff4757; border-color: #d63031; box-shadow: 0 0 40px #ff4757; animation: blink 0.2s infinite alternate; }\n    .chart-wrapper { flex: 1; background: #2f3640; border-radius: 15px; padding: 10px; position: relative; border: 2px solid #353b48; overflow: hidden; min-height: 0; }\n    .radar-bar-bg { width: 80%; height: 15px; background: #eee; border-radius: 10px; margin-top: 15px; overflow: hidden; }\n    .radar-bar-fill { height: 100%; background: var(--accent); transition: 0.3s; }\n    .video-container { flex: 3; background: #000; border-radius: 15px; position: relative; overflow: hidden; display: flex; justify-content: center; align-items: center; border: 2px solid #333; min-height: 0; }\n    .cam-image { width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0; z-index: 1; }\n    .video-overlay-status { position: absolute; top: 20px; left: 20px; z-index: 10; font-family: 'Orbitron'; color: rgba(255,255,255,0.8); display: flex; gap: 10px; align-items: center; background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 5px;}\n    .rec-dot { width: 12px; height: 12px; background: red; border-radius: 50%; animation: blink 1s infinite; }\n    .overlay-alert { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(214, 48, 49, 0.9); color: white; padding: 20px 40px; font-family: 'Rajdhani'; font-size: 2rem; font-weight: bold; border: 3px solid white; animation: pulseAlert 0.5s infinite; text-align: center; z-index: 20; display: none; }\n    .overlay-warning { position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%); background: #f1c40f; color: black; padding: 10px 20px; font-weight: bold; border-radius: 5px; z-index: 15; display: none; }\n    .flash-effect { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: white; opacity: 0; pointer-events: none; z-index: 30; }\n    .flash-anim { animation: flash 0.3s ease-out; }\n    .privacy-curtain { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #555; z-index: 50; display: none; }\n    .ai-box { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; border-radius: 15px; padding: 20px; text-align: center; border: 1px solid #444; flex-shrink: 0; }\n    .log-box { background: white; border-radius: 15px; padding: 15px; flex: 1; display: flex; flex-direction: column; overflow: hidden; min-height: 0; }\n    .log-list { flex: 1; overflow-y: auto; }\n    .log-item { padding: 8px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; font-size: 0.85rem; }\n    .log-item.crit { color: var(--danger); font-weight: bold; background: #fff5f5; }\n\n    .error-banner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(214, 48, 49, 0.95); border: 2px solid white; border-radius: 15px; padding: 20px 40px; text-align: center; color: white; font-family: 'Rajdhani'; z-index: 100; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: none; }\n    .error-banner h3 { margin: 0; font-size: 1.5rem; font-weight: bold; }\n    .error-banner p { margin: 5px 0 0 0; font-size: 1rem; }\n\n    /* NUEVO CSS: Mini Banners para las tarjetas pequeñas */\n    .mini-error-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(214, 48, 49, 0.95); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; border-radius: 15px; z-index: 20; display: none; text-align: center; font-family: 'Rajdhani'; }\n    .mini-error-banner i { font-size: 2.5rem; margin-bottom: 5px; }\n    .mini-error-banner span { font-weight: bold; font-size: 1.1rem; line-height: 1.1; }\n\n    @keyframes blink { from { opacity: 1; } to { opacity: 0.6; } }\n    @keyframes pulseAlert { 0% { transform: translate(-50%, -50%) scale(1); } 50% { transform: translate(-50%, -50%) scale(1.1); } 100% { transform: translate(-50%, -50%) scale(1); } }\n    @keyframes pulseBtn { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }\n    @keyframes flash { 0% { opacity: 1; } 100% { opacity: 0; } }\n</style>\n\n<div class=\"main-container\" ng-init=\"view='audio'\">\n    <div class=\"sub-sidebar\">\n        <div style=\"color: white; font-family: 'Rajdhani'; font-size: 1.2rem; padding: 10px; border-bottom: 1px solid #555; text-align:center;\">\n            <i class=\"fas fa-network-wired\" style=\"color:var(--accent)\"></i> ESCENARIO 1\n        </div>\n        <div style=\"padding: 10px; background: rgba(0,0,0,0.2); border-radius: 10px; margin-bottom: 10px;\">\n            <div style=\"display:flex; align-items:center; gap:10px; color:#bdc3c7; font-size:0.9rem; margin-bottom:5px;\">\n                <i class=\"fas fa-random\"></i> Simulación\n            </div>\n            <md-switch ng-model=\"config.sim\" aria-label=\"Sim\" ng-change=\"toggleSim()\" style=\"margin:0\"></md-switch>\n        </div>\n        <button class=\"nav-btn\" ng-class=\"{'active': view==='audio'}\" ng-click=\"view='audio'\">\n            <i class=\"fas fa-microphone-alt\"></i> Audio\n        </button>\n        <button class=\"nav-btn\" ng-class=\"{'active': view==='env'}\" ng-click=\"view='env'\">\n            <i class=\"fas fa-leaf\"></i> Ambiente\n        </button>\n        <button class=\"nav-btn\" ng-class=\"{'active': view==='sec'}\" ng-click=\"view='sec'\">\n            <i class=\"fas fa-shield-alt\"></i> Seguridad\n        </button>\n    </div>\n    <div class=\"content-area\">\n        <div id=\"simBadge\" class=\"sim-badge\"><i class=\"fas fa-gamepad\"></i> SIMULACIÓN</div>\n        \n        <div ng-show=\"view==='audio'\" class=\"audio-layout\">\n            <div class=\"audio-top\">\n                <div class=\"env-card\" style=\"flex: 1; align-items: stretch;\">\n                    <h3 class=\"env-title\">Intensidad de Entrada</h3>\n                    <div class=\"vu-horizontal\"><div id=\"vuBar\" class=\"vu-bar\" style=\"width: 0%\"></div></div>\n                    <div style=\"display: flex; justify-content: space-between; margin-top: 5px; font-size: 0.8rem; color: #888;\">\n                        <span>-40dB</span><span>0dB</span><span>+10dB</span>\n                    </div>\n                </div>\n                <div class=\"env-card\" style=\"width: 150px; flex: none;\">\n                    <h3 class=\"env-title\">Umbral</h3>\n                    <div id=\"siren\" class=\"siren\"></div>\n                    <span style=\"margin-top: 5px; font-size: 0.8rem; font-weight: bold;\">LIMITER</span>\n                </div>\n            </div>\n            <div class=\"chart-wrapper\">\n                <div id=\"micErrorBanner\" class=\"error-banner\">\n                    <i class=\"fas fa-microphone-slash\" style=\"font-size: 3rem; margin-bottom: 10px;\"></i>\n                    <h3>DISPOSITIVO DESCONECTADO</h3>\n                    <p>Reconecte el sensor de sonido al ESP32</p>\n                </div>\n                \n                <canvas id=\"soundChart\" style=\"width:100%; height:100%;\"></canvas>\n            </div>\n            <div id=\"digitalDeck\" class=\"digital-deck\" style=\"background:#000; border-radius:15px; padding:20px; display:flex; justify-content:space-between; align-items:center; border:3px solid #444; flex-shrink: 0; transition: 0.3s;\">\n                <div style=\"color:#00a8ff; font-family:'Orbitron';\">ADC INPUT</div>\n                <div id=\"digiVal\" style=\"color:#00ff00; font-family:'Orbitron'; font-size:2.5rem;\">0000</div>\n                <div style=\"color:#00a8ff; text-align:right;\">12-BIT</div>\n            </div>\n        </div>\n        \n        <div ng-show=\"view==='env'\" class=\"env-grid\">\n            <div class=\"env-col\">\n                <div id=\"cardPresencia\" class=\"env-card\" style=\"flex:2; position: relative;\">\n                    <div id=\"pirErrorBanner\" class=\"mini-error-banner\">\n                        <i class=\"fas fa-exclamation-triangle\"></i><span>PIR<br>DESCONECTADO</span>\n                    </div>\n                    <div class=\"env-title\">Monitor de Seguridad</div>\n                    <i id=\"iconPresencia\" class=\"fas big-icon\"></i>\n                    <div id=\"textPresencia\" class=\"status-badge\">--</div>\n                </div>\n                <div class=\"env-card\" style=\"background:#2f3640; color:white; flex:1\">\n                    <div class=\"env-title\" style=\"border-color:#444;\">Enlace</div>\n                    <div style=\"display:flex; gap:10px; align-items:center;\">\n                        <i class=\"fas fa-wifi\" style=\"color:var(--accent); font-size:1.5rem;\"></i>\n                        <div><div style=\"color:var(--accent); font-family:'Orbitron';\">ONLINE</div></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"env-col\">\n                <div id=\"cardDistancia\" class=\"env-card\" style=\"flex:1; position: relative;\">\n                    <div id=\"distErrorBanner\" class=\"mini-error-banner\">\n                        <i class=\"fas fa-satellite-dish\"></i><span>RADAR<br>DESCONECTADO</span>\n                    </div>\n                    <div class=\"env-title\">Radar Proximidad</div>\n                    <div><span id=\"valDistancia\" class=\"big-data\">--</span> <span id=\"unitDistancia\">cm</span></div>\n                    <div class=\"radar-bar-bg\"><div id=\"barDistancia\" class=\"radar-bar-fill\" style=\"width:0%\"></div></div>\n                </div>\n                <div id=\"cardZona\" class=\"env-card\" style=\"flex:1\">\n                    <div class=\"env-title\">Análisis Zona</div>\n                    <i id=\"iconZona\" class=\"fas big-icon\"></i>\n                    <div id=\"textZona\" style=\"font-weight:bold; font-size:1.3rem; margin-top:10px;\">--</div>\n                </div>\n            </div>\n            <div class=\"env-col\">\n                <div id=\"cardLdr\" class=\"env-card\" style=\"flex:1; position: relative;\">\n                    <div id=\"ldrErrorBanner\" class=\"mini-error-banner\">\n                        <i class=\"fas fa-lightbulb\"></i><span>LDR<br>DESCONECTADO</span>\n                    </div>\n                    <div class=\"env-title\">Iluminación</div>\n                    <i id=\"iconSol\" class=\"fas fa-lightbulb big-icon\"></i>\n                    <div style=\"margin-top:10px;\">\n                        <span id=\"valLuz\" class=\"big-data\">--</span> <span id=\"unitLuz\">%</span>\n                    </div>\n                </div>\n                <div class=\"env-card\" style=\"flex:1\">\n                    <div class=\"env-title\">Energía</div>\n                    <i id=\"iconEnergy\" class=\"fas fa-leaf big-icon\"></i>\n                    <div id=\"textEnergy\" style=\"font-weight:bold; font-size:1.1rem; margin-top:10px;\">--</div>\n                </div>\n            </div>\n        </div>\n        \n        <div ng-show=\"view==='sec'\" class=\"cam-layout\">\n            <div style=\"flex:3; display:flex; flex-direction:column; gap:15px; min-height: 0;\">\n                <div class=\"video-container\">\n                    <div class=\"video-overlay-status\"><div class=\"rec-dot\"></div><span>CAM-01 [LIVE]</span></div>\n                    <div id=\"alertOverlay\" class=\"overlay-alert\" ng-show=\"manualAlert\">ALARMA MANUAL</div>\n                    <div id=\"tamperOverlay\" class=\"overlay-alert\" style=\"background:rgba(0,0,0,0.9); border-color:red;\"><i class=\"fas fa-hand-paper\"></i> OBSTRUIDO</div>\n                    <div id=\"motionOverlay\" class=\"overlay-alert\"><i class=\"fas fa-running\"></i> MOVIMIENTO</div>\n                    <div id=\"soundOverlay\" class=\"overlay-alert\" style=\"background:rgba(231, 76, 60,0.9); border-color:white;\"><i class=\"fas fa-volume-up\"></i> RUIDO CRÍTICO</div>\n                    <div id=\"lightOverlay\" class=\"overlay-warning\"><i class=\"fas fa-low-vision\"></i> BAJA LUZ</div>\n                    <div id=\"flashEffect\" class=\"flash-effect\"></div>\n                    <div id=\"privacyCurtain\" class=\"privacy-curtain\" ng-show=\"privacyOn\">\n                        <i class=\"fas fa-user-secret\" style=\"font-size:4rem;\"></i><span>PRIVACIDAD</span>\n                    </div>\n                    <img id=\"stream_ia\" class=\"cam-image\" alt=\"Conectando cámara...\">\n                </div>\n                <div style=\"background:white; border-radius:15px; padding:15px; display:flex; justify-content:space-around; flex-shrink: 0;\">\n                    <button class=\"nav-btn\" ng-click=\"snap()\" style=\"background:#f1f2f6; color:#555;\"><i class=\"fas fa-camera\"></i> FOTO</button>\n                    <button class=\"nav-btn\" ng-click=\"togglePrivacy()\" style=\"background:#f1f2f6; color:#555;\"><i class=\"fas fa-user-slash\"></i> PRIVACIDAD</button>\n                    <button class=\"nav-btn\" ng-class=\"{'active-danger': manualAlert}\" style=\"color:#e74c3c; background:#ffebeb;\" ng-click=\"alarm()\"><i class=\"fas fa-bell\"></i> SIRENA</button>\n                </div>\n            </div>\n            <div style=\"flex:1; display:flex; flex-direction:column; gap:20px; min-height: 0;\">\n                <div class=\"ai-box\">\n                    <div class=\"env-title\" style=\"border-color:rgba(255,255,255,0.2); color:#bdc3c7;\">CONTROL AFORO</div>\n                    <div id=\"aiCounter\" class=\"big-data\" style=\"color:#00a8ff; margin:5px 0;\">0</div>\n                    <div id=\"aiStatus\" style=\"font-size:1rem; color:#f1c40f; font-weight:bold;\">SIN ACTIVIDAD</div>\n                </div>\n                <div class=\"log-box\">\n                    <div class=\"env-title\"><i class=\"fas fa-clipboard-list\"></i> Eventos</div>\n                    <div id=\"eventLog\" class=\"log-list\">\n                        <div class=\"log-item\" style=\"color:#2ecc71\"><i class=\"fas fa-power-off\"></i> Sistema Iniciado</div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n    scope.raw = { sound: 0, dist: 0, light: 0, pres: false };\n    scope.ui = {\n        audio: { pct: 0, alert: false, error: false },\n        env: { pres: {}, radar: 0, zona: {}, sun: {}, energy: {}, ldr_error: false, dist_error: false, pir_error: false },\n        security: { ai_count: 0, ai_status: \"SIN ACTIVIDAD\" }\n    };\n    scope.config = { sim: true };\n    scope.privacyOn = false;\n    scope.manualAlert = false;\n    \n    // Inyectar URL dinámica de la cámara IA\n    setTimeout(function() {\n        var camImg = document.getElementById('stream_ia');\n        if(camImg) camImg.src = 'http://' + window.location.hostname + ':5050/video_feed';\n    }, 1000);\n\n    var chartInstance = null;\n\n    scope.toggleSim = function() {\n        scope.send({ topic: \"sim_switch\", payload: scope.config.sim });\n    };\n\n    function addLog(text, type) {\n        var box = document.getElementById('eventLog');\n        if(!box) return;\n        var icon = \"fa-info-circle\"; var color = \"#3498db\";\n        if(type === 'crit') { icon = \"fa-exclamation-triangle\"; color = \"#e74c3c\"; }\n        if(type === 'cam') { icon = \"fa-camera\"; color = \"#8e44ad\"; }\n        if(type === 'priv') { icon = \"fa-user-secret\"; color = \"#bdc3c7\"; }\n        if(type === 'noise') { icon = \"fa-volume-up\"; color = \"#d63031\"; }\n        var item = document.createElement('div');\n        item.className = \"log-item\";\n        if(type==='crit' || type==='noise') item.classList.add('crit');\n        item.innerHTML = `<i class=\"fas ${icon}\" style=\"color:${color}\"></i> <span>${new Date().toLocaleTimeString()} - ${text}</span>`;\n        box.prepend(item);\n        if(box.children.length > 10) box.removeChild(box.lastChild);\n    }\n\n    function triggerFlash() {\n        var f = document.getElementById('flashEffect');\n        if(f) {\n            f.classList.remove('flash-anim');\n            void f.offsetWidth; \n            f.classList.add('flash-anim');\n        }\n    }\n\n    scope.togglePrivacy = function() { \n        scope.privacyOn = !scope.privacyOn; \n        document.getElementById('privacyCurtain').style.display = scope.privacyOn ? 'flex' : 'none';\n        addLog(scope.privacyOn ? \"Privacidad ON\" : \"Privacidad OFF\", \"priv\"); \n    };\n    \n    scope.snap = function() { \n        triggerFlash();\n        addLog(\"Captura Manual\", \"cam\"); \n    };\n    \n    scope.alarm = function() { \n        scope.manualAlert = !scope.manualAlert;\n        var statusText = scope.manualAlert ? \"SIRENA ACTIVADA\" : \"SIRENA APAGADA\";\n        addLog(statusText, \"crit\");\n        var cmd = scope.manualAlert ? \"ON\" : \"OFF\";\n        scope.send({ topic: \"buzzer_cmd\", payload: cmd });\n    };\n\n    setTimeout(function() {\n        var ctx = document.getElementById('soundChart');\n        if(ctx) {\n            chartInstance = new Chart(ctx, {\n                type: 'line',\n                data: {\n                    labels: Array(60).fill(''),\n                    datasets: [{\n                        label: 'Ruido (%)',\n                        data: Array(60).fill(0), \n                        borderColor: '#00a8ff', borderWidth: 3, \n                        backgroundColor: 'rgba(0, 168, 255, 0.1)', fill: true, \n                        pointRadius: 0, lineTension: 0.4 \n                    }]\n                },\n                options: {\n                    responsive: true, \n                    maintainAspectRatio: false, \n                    animation: { duration: 0 }, \n                    legend: { display: false },\n                    scales: {\n                        xAxes: [{ display: false }],\n                        yAxes: [{\n                            display: true,\n                            ticks: { \n                                min: 0, \n                                max: 100, \n                                suggestedMin: 0, \n                                suggestedMax: 100, \n                                beginAtZero: true, \n                                fontColor: '#888',\n                                stepSize: 20\n                            },\n                            gridLines: { color: '#444' }\n                        }]\n                    }\n                }\n            });\n        }\n    }, 500);\n\n    scope.$watch('msg.payload', function(newVal) {\n        if (!newVal) return;\n        if (newVal.raw) scope.raw = newVal.raw;\n        if (newVal.ui) scope.ui = newVal.ui;\n        if(newVal.config) scope.config.sim = newVal.config.sim;\n\n        var badge = document.getElementById('simBadge');\n        if(badge) badge.style.display = scope.config.sim ? 'block' : 'none';\n\n        // --- MANEJOS DE ERROR DE SENSORES ---\n        var micBanner = document.getElementById('micErrorBanner');\n        var deck = document.getElementById('digitalDeck');\n        var dv = document.getElementById('digiVal');\n        var vu = document.getElementById('vuBar');\n        \n        if(scope.ui.audio.error) {\n            if(micBanner) micBanner.style.display = 'block';\n            if(deck) deck.style.opacity = '0.3';\n            if(dv) { dv.innerText = \"ERROR\"; dv.style.color = \"#d63031\"; }\n            if(vu) vu.style.width = '0%';\n        } else {\n            if(micBanner) micBanner.style.display = 'none';\n            if(deck) deck.style.opacity = '1';\n            if(dv) { dv.innerText = scope.raw.sound; dv.style.color = \"#00ff00\"; }\n            if(vu) vu.style.width = scope.ui.audio.pct + '%';\n        }\n\n        var pirBanner = document.getElementById('pirErrorBanner');\n        if(scope.ui.env.pir_error) { if(pirBanner) pirBanner.style.display = 'flex'; }\n        else { if(pirBanner) pirBanner.style.display = 'none'; }\n\n        var distBanner = document.getElementById('distErrorBanner');\n        if(scope.ui.env.dist_error) { if(distBanner) distBanner.style.display = 'flex'; }\n        else { if(distBanner) distBanner.style.display = 'none'; }\n\n        var ldrBanner = document.getElementById('ldrErrorBanner');\n        if(scope.ui.env.ldr_error) { if(ldrBanner) ldrBanner.style.display = 'flex'; }\n        else { if(ldrBanner) ldrBanner.style.display = 'none'; }\n\n        // ------------------------------------\n\n        var siren = document.getElementById('siren');\n        if(siren) {\n            if(scope.ui.audio.alert && !scope.ui.audio.error) siren.classList.add('alert');\n            else siren.classList.remove('alert');\n        }\n        \n        if(chartInstance) {\n            var val_to_plot = scope.ui.audio.error ? 0 : scope.ui.audio.pct;\n            chartInstance.data.datasets[0].data.push(val_to_plot);\n            chartInstance.data.datasets[0].data.shift();\n            if(scope.view === 'audio') chartInstance.update();\n        }\n\n        var cp = document.getElementById('cardPresencia');\n        var ip = document.getElementById('iconPresencia');\n        var tp = document.getElementById('textPresencia');\n        if(cp) {\n            cp.className = \"env-card \" + scope.ui.env.pres.class;\n            ip.className = \"fas big-icon \" + scope.ui.env.pres.icon;\n            ip.style.color = scope.ui.env.pres.color;\n            tp.innerText = scope.ui.env.pres.text;\n            tp.style.background = scope.ui.env.pres.color;\n        }\n\n        var vd = document.getElementById('valDistancia');\n        if(vd) vd.innerText = scope.raw.dist;\n        var bd = document.getElementById('barDistancia');\n        if(bd) bd.style.width = scope.ui.env.radar + '%';\n\n        var cz = document.getElementById('cardZona');\n        var iz = document.getElementById('iconZona');\n        var tz = document.getElementById('textZona');\n        if(cz) {\n            cz.style.borderLeft = \"5px solid \" + scope.ui.env.zona.border;\n            iz.className = \"fas big-icon \" + scope.ui.env.zona.icon;\n            iz.style.color = scope.ui.env.zona.color;\n            tz.innerText = scope.ui.env.zona.text;\n            tz.style.color = scope.ui.env.zona.color;\n        }\n        \n        var vl = document.getElementById('valLuz');\n        if(vl) vl.innerText = scope.raw.light;\n        var isol = document.getElementById('iconSol');\n        if(isol) {\n            isol.style.color = scope.ui.env.sun.color;\n            isol.style.textShadow = scope.ui.env.sun.shadow;\n        }\n\n        var te = document.getElementById('textEnergy');\n        var ie = document.getElementById('iconEnergy');\n        if(te) {\n            te.innerText = scope.ui.env.energy.text;\n            ie.style.color = scope.ui.env.energy.color;\n        }\n\n        var mo = document.getElementById('motionOverlay');\n        var to = document.getElementById('tamperOverlay');\n        var lo = document.getElementById('lightOverlay');\n        var so = document.getElementById('soundOverlay');\n        \n        if(!scope.privacyOn) {\n            if(mo) mo.style.display = scope.raw.pres ? 'block' : 'none';\n            if(to) to.style.display = scope.ui.env.zona.tamper ? 'block' : 'none';\n            if(lo) lo.style.display = scope.ui.env.sun.low_light ? 'block' : 'none';\n            \n            if(scope.ui.audio.alert && !scope.ui.audio.error) {\n                if(so) {\n                    so.style.display = 'block';\n                    setTimeout(() => so.style.display = 'none', 1500);\n                }\n                if(!scope.lastSoundAlert) {\n                    scope.lastSoundAlert = true;\n                    setTimeout(() => scope.lastSoundAlert = false, 2000);\n                }\n            }\n        }\n\n        var aic = document.getElementById('aiCounter');\n        if(aic) aic.innerText = scope.ui.security.ai_count;\n        var ais = document.getElementById('aiStatus');\n        if(ais) ais.innerText = scope.ui.security.ai_status;\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            [
+                "e9eb8623709d40b5",
+                "af718b621a67c026"
+            ]
+        ]
+    },
+    {
+        "id": "ui_botones_globales",
+        "type": "ui_template",
+        "z": "d8dc90e837e21ab6",
+        "group": "group_esc1_v2",
+        "name": "Inyectar Botones Globales (Sidebar)",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n(function(scope) {\n    function addGlobalButtons() {\n        var menu = document.querySelector('md-list');\n        if(!menu) {\n            setTimeout(addGlobalButtons, 500);\n            return;\n        }\n        if(document.getElementById('btn-iniciar-global')) return;\n\n        var divider = document.createElement('md-divider');\n        menu.appendChild(divider);\n\n        // 1. Botón Iniciar Rendimiento\n        var liIniciar = document.createElement('md-list-item');\n        liIniciar.id = 'btn-iniciar-global';\n        liIniciar.className = \"md-no-style\";\n        liIniciar.innerHTML = '<md-button style=\"margin-left: 1cm; color:#27ae60; font-weight:bold; width:100%; text-align:left; text-transform:none;\">Iniciar Rendimiento</md-button>';\n        liIniciar.onclick = function() {\n            var hash = window.location.hash.split('?')[0];\n            var tabMap = {\n                \"#!/0\": \"Inicio\",\n                \"#!/1\": \"1. Recolección de datos\",\n                \"#!/2\": \"2. Limpieza Datos\",\n                \"#!/3\": \"3. Predicción IA\",\n                \"#!/4\": \"4. Aula Inteligente\",\n                \"#!/5\": \"5. Nube (Proyector)\",\n                \"#!/6\": \"6. Participar (Celular)\",\n                \"#!/7\": \"7. Encuesta\"\n            };\n            var currentTab = tabMap[hash] || \"Escenario Desconocido (\" + hash + \")\";\n\n            if(confirm(\"¿Iniciar la recolección automática de métricas (cada 5 seg) para este escenario?\")) {\n                 scope.send({topic: \"iniciar\", payload: currentTab});\n                 alert(\" Recolección INICIADA para:\\n\" + currentTab);\n            }\n        };\n        menu.appendChild(liIniciar);\n\n        // 2. Botón Terminar Rendimiento\n        var liTerminar = document.createElement('md-list-item');\n        liTerminar.id = 'btn-terminar-global';\n        liTerminar.className = \"md-no-style\";\n        liTerminar.innerHTML = '<md-button style=\"margin-left: 1cm; color:#f39c12; font-weight:bold; width:100%; text-align:left; text-transform:none;\">Terminar Rendimiento</md-button>';\n        liTerminar.onclick = function() {\n             scope.send({topic: \"terminar\", payload: \"\"});\n             alert(\" Recolección de métricas DETENIDA.\");\n        };\n        menu.appendChild(liTerminar);\n\n        // 3. Botón Limpiar Historial\n        var liLimpiar = document.createElement('md-list-item');\n        liLimpiar.id = 'btn-limpiar-global';\n        liLimpiar.className = \"md-no-style\";\n        liLimpiar.innerHTML = '<md-button style=\"margin-left: 1cm; color:#c0392b; font-weight:bold; width:100%; text-align:left; text-transform:none;\"> Limpiar Historial</md-button>';\n        liLimpiar.onclick = function() {\n            if(confirm(\"⚠️ ATENCIÓN: ¿Seguro que desea eliminar permanentemente todas las métricas de rendimiento guardadas?\")) {\n                 scope.send({topic: \"limpiar\", payload: \"borrar\"});\n                 alert(\" Historial de métricas borrado exitosamente.\");\n            }\n        };\n        menu.appendChild(liLimpiar);\n    }\n    addGlobalButtons();\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "switch_router_metricas"
+            ]
+        ]
+    },
+    {
+        "id": "switch_router_metricas",
+        "type": "switch",
+        "z": "d8dc90e837e21ab6",
+        "name": "Enrutar Acción",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "iniciar",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "terminar",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "limpiar",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "func_activar_metricas"
+            ],
+            [
+                "func_desactivar_metricas"
+            ],
+            [
+                "file_delete_bitacora"
+            ]
+        ]
+    },
+    {
+        "id": "func_activar_metricas",
+        "type": "function",
+        "z": "d8dc90e837e21ab6",
+        "name": "ON",
+        "func": "global.set(\"metricas_activas\", true);\nglobal.set(\"escenario_actual\", msg.payload);\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_desactivar_metricas",
+        "type": "function",
+        "z": "d8dc90e837e21ab6",
+        "name": "OFF",
+        "func": "global.set(\"metricas_activas\", false);\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "file_delete_bitacora",
+        "type": "file",
+        "z": "d8dc90e837e21ab6",
+        "name": "Borrar CSV",
+        "filename": "/data/bitacora_rendimiento.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "reloj_metricas_5s",
+        "type": "inject",
+        "z": "d8dc90e837e21ab6",
+        "name": "Muestreo 5s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "check_estado_metricas"
+            ]
+        ]
+    },
+    {
+        "id": "check_estado_metricas",
+        "type": "function",
+        "z": "d8dc90e837e21ab6",
+        "name": "¿Están Activas?",
+        "func": "var activas = global.get(\"metricas_activas\");\n\nif (activas === true) {\n    msg.nombre_escenario = global.get(\"escenario_actual\");\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "exec_leer_cpu"
+            ]
+        ]
+    },
+    {
+        "id": "exec_leer_cpu",
+        "type": "exec",
+        "z": "d8dc90e837e21ab6",
+        "command": "top -bn1 | head -n 5",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Leer CPU",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "save_cpu_temp"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "save_cpu_temp",
+        "type": "change",
+        "z": "d8dc90e837e21ab6",
+        "name": "Guardar CPU Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cpu_data",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "exec_leer_ram"
+            ]
+        ]
+    },
+    {
+        "id": "exec_leer_ram",
+        "type": "exec",
+        "z": "d8dc90e837e21ab6",
+        "command": "cat /proc/meminfo",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Leer RAM",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "func_procesar_cpu_ram"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "func_procesar_cpu_ram",
+        "type": "function",
+        "z": "d8dc90e837e21ab6",
+        "name": "Procesar y Armar CSV",
+        "func": "var outCpu = msg.cpu_data || \"\";\nvar outRam = msg.payload || \"\";\n\n// 1. Procesar CPU\nvar cpuVal = 0;\ntry {\n    var lines = outCpu.split('\\n');\n    var cpuLine = \"\";\n    for(var i=0; i<lines.length; i++){\n        if(lines[i].toLowerCase().includes('cpu')){\n            cpuLine = lines[i]; break;\n        }\n    }\n    var idle = 100;\n    var matchId = cpuLine.match(/([0-9.,]+)\\s*%?\\s*id/i);\n    if(matchId) {\n        idle = parseFloat(matchId[1].replace(',','.'));\n        cpuVal = Math.round(100 - idle);\n    }\n} catch(e) {}\n\n// 2. Procesar RAM\nvar ramVal = 0;\ntry {\n    var matchTotal = outRam.match(/MemTotal:\\s+(\\d+)/);\n    var matchAvail = outRam.match(/MemAvailable:\\s+(\\d+)/) || outRam.match(/MemFree:\\s+(\\d+)/);\n    if(matchTotal && matchAvail){\n        var total = parseInt(matchTotal[1]);\n        var avail = parseInt(matchAvail[1]);\n        ramVal = Math.round(((total - avail) / total) * 100);\n    }\n} catch(e) {}\n\n// 3. Formatear Fecha Local\nvar d = new Date();\nvar tzOffset = d.getTimezoneOffset() * 60000;\nvar localISOTime = (new Date(d - tzOffset)).toISOString().slice(0, -1);\nvar fechaStr = localISOTime.split('T')[0] + \" \" + localISOTime.split('T')[1].split('.')[0];\n\n// 4. Limpiar nombre del escenario\nvar escenario = msg.nombre_escenario;\nif (!escenario || escenario.trim() === \"\") {\n    escenario = \"Desconocido\";\n} else {\n    escenario = escenario.trim();\n}\n\nmsg.payload = {\n    \"Fecha_Hora\": fechaStr,\n    \"Escenario\": escenario,\n    \"CPU_Porcentaje\": cpuVal,\n    \"RAM_Porcentaje\": ramVal\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "csv_rendimiento"
+            ]
+        ]
+    },
+    {
+        "id": "csv_rendimiento",
+        "type": "csv",
+        "z": "d8dc90e837e21ab6",
+        "name": "A CSV",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "skip": 0,
+        "strings": true,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "file_save_bitacora"
+            ]
+        ]
+    },
+    {
+        "id": "file_save_bitacora",
+        "type": "file",
+        "z": "d8dc90e837e21ab6",
+        "name": "Guardar /data/bitacora_rendimiento.csv",
+        "filename": "/data/bitacora_rendimiento.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "setbymsg",
+        "x": 860,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "node_function_format",
+        "type": "function",
+        "z": "dc7152bb2106ef80",
+        "name": "Estructurar a JSON Plano",
+        "func": "var d = new Date();\nvar fechaStr = d.toISOString().split('T')[0] + \" \" + d.toTimeString().split(' ')[0];\n\nvar p = msg.payload;\n\nmsg.payload = {\n    \"Fecha_Hora\": fechaStr,\n    \"Nivel_Instruccion\": p.q1,\n    \"Claridad_Exposicion\": parseInt(p.q2),\n    \"Facilidad_Conexion\": parseInt(p.q3),\n    \"Interfaz_Visual\": parseInt(p.q4),\n    \"Precision_Sensores\": parseInt(p.q5),\n    \"Reaccion_Actuadores\": parseInt(p.q6),\n    \"Escenario_Favorito\": p.q7,\n    \"Impacto_Vocacional\": p.q8,\n    \"Nivel_Innovacion\": parseInt(p.q9),\n    \"Sugerencias_Comentarios\": p.q10\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 100,
+        "wires": [
+            [
+                "node_csv_conversor"
+            ]
+        ]
+    },
+    {
+        "id": "node_csv_conversor",
+        "type": "csv",
+        "z": "dc7152bb2106ef80",
+        "name": "Convertir a CSV",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "x": 570,
+        "y": 100,
+        "wires": [
+            [
+                "node_file_save"
+            ]
+        ]
+    },
+    {
+        "id": "1b5f63d9.5f042c",
+        "type": "qrcode-generator",
+        "z": "dc7152bb2106ef80",
+        "name": "Generador QR Encuesta",
+        "qrtype": "",
+        "text2qrText": "http://192.168.1.30:1880/ui/#!/7",
+        "ssid": "",
+        "hiddenssid": false,
+        "wifitype": "",
+        "phonenum": "",
+        "smsphonenum": "",
+        "smstext": "",
+        "mailto": "",
+        "mailsubject": "",
+        "mailbody": "",
+        "latitude": "",
+        "longitude": "",
+        "colorlight": "#ffffff",
+        "colordark": "#000000",
+        "printstatus": false,
+        "x": 860,
+        "y": 180,
+        "wires": [
+            [
+                "9e1c2552.f88ac8"
+            ]
+        ]
+    },
+    {
+        "id": "9e1c2552.f88ac8",
+        "type": "ui_template",
+        "z": "dc7152bb2106ef80",
+        "group": "grp_encuesta_qr",
+        "name": "Mostrar QR Dinámico",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<div id=\"qr-encuesta-wrapper\" style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; height:100%; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);\">\n    <h3 style=\"color:#2980b9; font-weight:bold; margin-bottom:15px; text-align:center; font-family: 'Roboto', sans-serif;\"><i class=\"fa fa-qrcode\"></i> ¡Escanea para evaluar!</h3>\n    <p style=\"color:#7f8c8d; text-align:center; margin-bottom: 20px; font-size: 14px;\">Tu opinión nos ayuda a mejorar el proyecto.</p>\n    \n    <img src=\"{{msg.payload}}\" alt=\"QR Code\" style=\"width: 100%; max-width: 220px; border-radius:10px; border: 2px solid #ecf0f1;\"/>\n    \n    <p style=\"margin-top: 20px; color:#95a5a6; text-align:center; font-size: 12px;\"><i class=\"fa fa-mobile\"></i> Abre la cámara de tu celular</p>\n</div>\n\n<style>\n    /* OCULTAR EN CELULARES (Magia CSS) */\n    @media only screen and (max-width: 1024px) {\n        /* Oculta el menú lateral izquierdo */\n        md-toolbar button.md-icon-button, md-sidenav, .md-sidenav-backdrop {\n            display: none !important;\n        }\n        /* Oculta completamente la tarjeta (card) que contiene el QR */\n        .hide-qr-on-mobile {\n            display: none !important;\n        }\n    }\n</style>\n\n<script>\n    /* Este script busca la tarjeta padre de este QR y le añade la clase que la oculta en celulares */\n    setTimeout(function() {\n        var wrapper = document.getElementById(\"qr-encuesta-wrapper\");\n        if(wrapper) {\n            var card = wrapper.closest(\"md-card\");\n            if(card) {\n                card.classList.add(\"hide-qr-on-mobile\");\n            }\n        }\n    }, 200);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1110,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "node_file_save",
+        "type": "file",
+        "z": "dc7152bb2106ef80",
+        "name": "Guardar CSV Encuesta",
+        "filename": "/data/resultados_encuesta.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "setbymsg",
+        "x": 510,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "node_template_encuesta_v2",
+        "type": "ui_template",
+        "z": "dc7152bb2106ef80",
+        "group": "grp_encuesta_form",
+        "name": "App Encuesta Móvil",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<style>\n  .encuesta-container {\n    font-family: 'Roboto', sans-serif;\n    background: #ecf0f1;\n    padding: 10px;\n    border-radius: 8px;\n  }\n  .titulo-encuesta {\n    color: #2c3e50;\n    text-align: center;\n    font-weight: bold;\n    margin-bottom: 20px;\n  }\n  .pregunta-card {\n    background: white;\n    padding: 15px;\n    border-radius: 8px;\n    margin-bottom: 15px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.05);\n  }\n  .pregunta-card label {\n    font-weight: bold;\n    color: #34495e;\n    display: block;\n    margin-bottom: 10px;\n  }\n  .pregunta-card p.escala {\n    font-size: 12px;\n    color: #7f8c8d;\n    margin-bottom: 10px;\n    text-align: center;\n  }\n  select, textarea {\n    width: 100%;\n    padding: 10px;\n    border: 1px solid #bdc3c7;\n    border-radius: 5px;\n    box-sizing: border-box;\n    font-family: inherit;\n  }\n  .escala-container {\n    display: flex;\n    justify-content: space-between;\n  }\n  .escala-container label {\n    font-weight: normal;\n    text-align: center;\n    cursor: pointer;\n  }\n  .btn-enviar {\n    width: 100%;\n    background: #27ae60;\n    color: white;\n    border: none;\n    padding: 15px;\n    border-radius: 5px;\n    font-size: 16px;\n    font-weight: bold;\n    cursor: pointer;\n    box-shadow: 0 4px 6px rgba(39, 174, 96, 0.3);\n    transition: background 0.3s;\n  }\n  .btn-enviar:hover {\n    background: #219150;\n  }\n  .pantalla-exito {\n    text-align: center;\n    padding: 40px 10px;\n    background: white;\n    border-radius: 8px;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n    margin-top: 20px;\n  }\n</style>\n\n<div class=\"encuesta-container\">\n\n  \n  <div ng-hide=\"enviado\">\n    <h2 class=\"titulo-encuesta\">Evaluación del Proyecto TI</h2>\n    <form>\n      \n      <div class=\"pregunta-card\">\n        <label>1. Nivel de instrucción actual:</label>\n        <select ng-model=\"formData.q1\">\n          <option value=\"Bachillerato / Colegio\">Bachillerato / Colegio</option>\n          <option value=\"Universitario\">Universitario</option>\n          <option value=\"Profesional\">Profesional</option>\n          <option value=\"Otro\">Otro</option>\n        </select>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>2. Claridad de la explicación del expositor:</label>\n        <p class=\"escala\">(1 = Muy deficiente, 5 = Excelente)</p>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q2\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q2\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q2\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q2\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q2\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>3. Facilidad para conectarte y usar el código QR:</label>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q3\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q3\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q3\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q3\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q3\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>4. Fluidez y atractivo visual de la pantalla gigante:</label>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q4\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q4\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q4\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q4\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q4\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>5. Sensores: Precisión y rapidez al captar tu movimiento/datos:</label>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q5\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q5\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q5\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q5\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q5\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>6. Actuadores: Reacción física de luces, ventilador o sonido:</label>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q6\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q6\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q6\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q6\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q6\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>7. ¿Cuál escenario te pareció más impactante?</label>\n        <select ng-model=\"formData.q7\">\n          <option value=\"Visión Artificial (Cámara)\">Visión Artificial (Cámara)</option>\n          <option value=\"Limpieza de datos (Ruido/Distancia)\">Limpieza de datos (Ruido/Distancia)</option>\n          <option value=\"Predicción IA (Luz, ruido, mov)\">Predicción IA (Luz, ruido, mov)</option>\n          <option value=\"Domótica (Ventilador y Luces)\">Domótica (Ventilador y Luces)</option>\n          <option value=\"Lenguaje Natural (Nubes/Emoción)\">Lenguaje Natural (Nubes/Emoción)</option>\n        </select>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>8. ¿Tu interés por estudiar la carrera TI aumentó?</label>\n        <select ng-model=\"formData.q8\">\n          <option value=\"Sí, definitivamente\">Sí, definitivamente</option>\n          <option value=\"Tal vez, me dio curiosidad\">Tal vez, me dio curiosidad</option>\n          <option value=\"No, mi interés se mantiene igual\">No, mi interés se mantiene igual</option>\n          <option value=\"No es un área de mi interés\">No es un área de mi interés</option>\n        </select>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>9. Nivel general de innovación tecnológica:</label>\n        <div class=\"escala-container\">\n          <label><input type=\"radio\" ng-model=\"formData.q9\" value=\"1\"> 1</label>\n          <label><input type=\"radio\" ng-model=\"formData.q9\" value=\"2\"> 2</label>\n          <label><input type=\"radio\" ng-model=\"formData.q9\" value=\"3\"> 3</label>\n          <label><input type=\"radio\" ng-model=\"formData.q9\" value=\"4\"> 4</label>\n          <label><input type=\"radio\" ng-model=\"formData.q9\" value=\"5\"> 5</label>\n        </div>\n      </div>\n\n      <div class=\"pregunta-card\">\n        <label>10. Sugerencias o mejoras (Opcional):</label>\n        <textarea ng-model=\"formData.q10\" rows=\"3\" placeholder=\"Escribe aquí tu comentario...\"></textarea>\n      </div>\n\n      \n      <button type=\"button\" class=\"btn-enviar\" ng-click=\"enviarDatos()\">\n          <i class=\"fa fa-paper-plane\"></i> ENVIAR RESPUESTAS\n      </button>\n    </form>\n  </div>\n\n  \n  <div ng-show=\"enviado\" class=\"pantalla-exito\">\n    <i class=\"fa fa-check-circle\" style=\"color: #27ae60; font-size: 70px; margin-bottom: 15px;\"></i>\n    <h2 style=\"color: #2c3e50; font-family: 'Orbitron', sans-serif;\">¡Gracias por participar!</h2>\n    <p style=\"color: #7f8c8d; margin-bottom: 25px; font-size: 16px;\">Tus respuestas han sido registradas de forma exitosa y anónima. Esto nos ayuda enormemente a mejorar.</p>\n    <button type=\"button\" ng-click=\"resetForm()\" style=\"padding: 12px 25px; border: none; background: #3498db; color: white; border-radius: 5px; font-weight: bold; cursor:pointer; width: 100%; font-size: 15px;\">\n        <i class=\"fa fa-refresh\"></i> Ingresar Nueva Encuesta\n    </button>\n  </div>\n\n</div>\n\n\n<script>\n(function(scope) {\n    // Inicialización de variables\n    scope.enviado = false;\n    scope.formData = {\n        q1: 'Bachillerato / Colegio',\n        q2: '5', q3: '5', q4: '5', q5: '5', q6: '5',\n        q7: 'Visión Artificial (Cámara)',\n        q8: 'Sí, definitivamente',\n        q9: '5', q10: ''\n    };\n\n    // Función que se ejecuta al presionar \"ENVIAR\"\n    scope.enviarDatos = function() {\n        // 1. Envía el payload a Node-RED\n        scope.send({payload: scope.formData});\n        // 2. Cambia la vista a la pantalla de éxito\n        scope.enviado = true;\n    };\n\n    // Función para limpiar y regresar al formulario vacío\n    scope.resetForm = function() {\n        scope.enviado = false;\n        scope.formData.q10 = ''; // Borramos solo el texto abierto\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "node_function_format"
+            ]
+        ]
+    },
+    {
+        "id": "btn_borrar_encuesta_s7",
+        "type": "ui_button",
+        "z": "dc7152bb2106ef80",
+        "name": "",
+        "group": "grp_encuesta_qr",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "LIMPIAR REGISTROS (ADMIN)",
+        "tooltip": "Elimina permanentemente el archivo Excel",
+        "color": "#ffffff",
+        "bgcolor": "#c0392b",
+        "className": "hide-qr-on-mobile",
+        "icon": "fa-trash",
+        "payload": "/data/resultados_encuesta.csv",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "file_delete_s7"
+            ]
+        ]
+    },
+    {
+        "id": "file_delete_s7",
+        "type": "file",
+        "z": "dc7152bb2106ef80",
+        "name": "Borrar CSV",
+        "filename": "/data/resultados_encuesta.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "toast_confirm_s7"
+            ]
+        ]
+    },
+    {
+        "id": "toast_confirm_s7",
+        "type": "ui_toast",
+        "z": "dc7152bb2106ef80",
+        "position": "top right",
+        "displayTime": "4",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "ENTENDIDO",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "SISTEMA DE LIMPIEZA",
+        "name": "Confirmación",
+        "x": 570,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "trigger_inicio_red",
+        "type": "inject",
+        "z": "dc7152bb2106ef80",
+        "name": "Al Iniciar Node-RED",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "exec_obtener_ip"
+            ]
+        ]
+    },
+    {
+        "id": "exec_obtener_ip",
+        "type": "exec",
+        "z": "dc7152bb2106ef80",
+        "command": "hostname -I | awk '{print $1}'",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Leer IP LAN",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "func_armar_url_qr"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "func_armar_url_qr",
+        "type": "function",
+        "z": "dc7152bb2106ef80",
+        "name": "Armar URL Encuesta (Tab 7)",
+        "func": "// Limpiar espacios o saltos de línea de la respuesta de Linux\nvar ip = msg.payload.trim();\n\n// Si por alguna razón no hay IP, usar localhost por defecto para evitar errores\nif (ip === \"\") {\n    ip = \"127.0.0.1\";\n}\n\n// Construir la URL completa para el Tab 7 (Encuesta)\nmsg.payload = \"http://\" + ip + \":1880/ui/#!/7\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "1b5f63d9.5f042c"
+            ]
+        ]
+    }
+]

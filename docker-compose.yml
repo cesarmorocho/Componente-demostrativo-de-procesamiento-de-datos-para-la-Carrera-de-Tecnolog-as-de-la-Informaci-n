@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  nodered:
+    container_name: mi_proyecto_nodered
+    build: .
+    restart: unless-stopped
+    # Privileged es CRUCIAL para acceder a los pines GPIO de la Raspberry Pi desde Docker
+    privileged: true
+    user: root
+    environment:
+      - TZ=America/Guayaquil  # Ajusta a tu zona horaria
+    network_mode: "host"
+    volumes:
+      # Esto guarda tus flujos fuera del contenedor para que no se borren al reiniciar
+      - ./data:/data
+    devices:
+      # Mapeo directo de los pines físicos al contenedor
+      - "/dev/gpiomem:/dev/gpiomem"
+      - "/dev/mem:/dev/mem"
+      - "/dev/video0:/dev/video0"
